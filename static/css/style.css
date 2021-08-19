@@ -244,12 +244,13 @@ nav.navigation a.button {
     display: inline-block;
     width:100px;
     height: 100px;
+    /*     border-radius: 50%; */
 } 
 
 .profile h1 {
     font-weight: 400;
     letter-spacing: 0px;
-    font-size: 20px;
+    font-size: 26px;
     color: #404040;
     margin-bottom: 0;
     margin-top: 0;
@@ -460,6 +461,10 @@ nav.navigation a.button {
   max-width: 580px;
   margin: 48px auto 0 auto;
   padding: 0 12px;
+}
+
+.summary_img {
+    padding-top: 10px;
 }
 
 /* 404 page */

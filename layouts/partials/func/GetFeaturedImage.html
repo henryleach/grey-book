@@ -1,0 +1,21 @@
+{{/* Inspired by https://github.com/theNewDynamic/gohugo-theme-ananke/blob/master/layouts/partials/func/GetFeaturedImage.html
+
+It will either use an image defined by the parameter "featured_image"
+in the front matter, or try to find a random image in the pagebundle to use,
+if any images exist.
+*/}}
+
+{{ $featuredImage := "" }}
+
+{{ if .Params.featured_image }}
+{{ $featuredImage =  (.Resources.GetMatch (print "*" .Params.featured_image)) }}
+
+{{ else }}
+
+{{ $img := (.Resources.ByType "image").GetMatch "*.*" }}
+{{ if $img }}
+{{ $featuredImage = $img }}
+{{ end }}
+{{ end }}
+
+{{ return $featuredImage}}
