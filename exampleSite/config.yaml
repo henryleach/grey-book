@@ -1,7 +1,7 @@
 baseURL: https://example.com
 languageCode: en-us
 title: Hugo
-theme: hugo-theme-mini
+theme: hugo-themegrey-book
 
 # for exampleSite only, you may need to delete the line: `themesDir: ../../` 
 themesDir: ../../

@@ -1,3 +1,9 @@
+# 2021.08.19
+
+- Added featured images to summaries.
+- Increased site title size
+- Made avatar round/square a Parameter
+
 # 2021.08.12
 
 - Changed font to Serif

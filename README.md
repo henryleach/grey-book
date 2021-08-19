@@ -1,11 +1,11 @@
 # Hugo Grey Book Theme
 
-A fast, minimalist and responsive hugo theme, forked from Nodejh's [Mini](https://github.com/nodejh/hugo-theme-mini) theme. 
+A fast, minimalist and responsive hugo theme, forked from Nodejh's [Mini](https://github.com/henryleach/hugo-theme-grey-book) theme. 
 
 _add screenshot here?_
 
 - [Online demo](https://nodejh.github.io/hugo-theme-mini)
-- [Example Site Source](https://github.com/nodejh/hugo-theme-mini/tree/master/exampleSite)
+- [Example Site Source](https://github.com/henryleach/hugo-theme-grey-book/tree/master/exampleSite)
 
 Features:
 
@@ -37,7 +37,7 @@ Features:
 
     ```yaml
     theme: 
-       - github.com/nodejh/hugo-theme-mini
+       - github.com/henryleach/hugo-theme-grey-book
     ```
 
 ### As Git Submodule
@@ -45,13 +45,13 @@ Features:
 1. Inside the folder of your Hugo site run:
 
     ```bash
-    $ git submodule add https://github.com/nodejh/hugo-theme-mini.git themes/mini
+    $ git submodule add https://github.com/henryleach/hugo-theme-grey-book.git themes/mini
     ```
 
 2. Add the theme's directory to your `config.yaml`:
 
     ```yaml
-   theme: mini
+   theme: grey-book
     ```
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
@@ -64,7 +64,7 @@ After installing the theme successfully it requires a just a few more steps to g
 
 ### The config file
 
-Take a look inside the [`exampleSite`](https://github.com/nodejh/hugo-theme-mini/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.yaml`](https://github.com/nodejh/hugo-theme-mini/blob/master/exampleSite/config.yaml). To use it, copy the [`config.yaml`](https://github.com/nodejh/hugo-theme-mini/blob/master/exampleSite/config.yaml) in the root folder of your Hugo site. Feel free to change the strings in this theme.
+Take a look inside the [`exampleSite`](https://github.com/henryleach/hugo-theme-grey-book/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.yaml`](https://github.com/henryleach/hugo-theme-grey-book/blob/master/exampleSite/config.yaml). To use it, copy the [`config.yaml`](https://github.com/henryleach/hugo-theme-grey-book/blob/master/exampleSite/config.yaml) in the root folder of your Hugo site. Feel free to change the strings in this theme.
 
 > ⚠️ You may need to delete the line: `themesDir: ../../` 
 
@@ -94,16 +94,14 @@ To enable google analytics, add following to your config file:
 
 ### Logo and favicon
 
-You can replace the log in the top of each page and favicon with your own images. To do that put your own logo and favicon into the `images` directory of your website static directory, then named them `avatar.png` and `favicon.ico`. For example:
+Set them to whichever image you like using the parameters. Avatar size is 100x100px.
 
-```
-- content
-- static
-└── images
-    ├── avatar.png
-    └── favicon.ico
-```
-
+    ```toml
+    [params]
+	favicon = "/images/yourfavicon.png"
+	avatar = "/images/youravatar.png"
+	roundAvatar = false
+    ```
 ## License
 
-[MIT](https://github.com/nodejh/hugo-theme-mini/blob/master/LICENSE.md)
+[MIT](https://github.com/henryleach/hugo-theme-grey-book/blob/main/LICENSE.md)
