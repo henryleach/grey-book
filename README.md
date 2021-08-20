@@ -25,10 +25,10 @@ Features:
     $ git submodule add https://github.com/henryleach/hugo-theme-grey-book.git themes/grey-book
     ```
 
-2. Add the theme's directory to your `config.yaml`:
+2. Add the theme's directory to your `config.toml`:
 
-    ```yaml
-   theme: grey-book
+    ```
+   theme = "grey-book"
     ```
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
@@ -47,7 +47,7 @@ After installing the theme, you need to update the config.toml file in your site
 
 Take a look inside the [`exampleSite`](https://github.com/henryleach/hugo-theme-grey-book/tree/main/exampleSite) folder of this theme. You'll find a file called [`config.yaml`](https://github.com/henryleach/hugo-theme-grey-book/blob/master/exampleSite/config.yaml). To use it, copy the [`config.yaml`](https://github.com/henryleach/hugo-theme-grey-book/blob/master/exampleSite/config.yaml) in the root folder of your Hugo site. Feel free to change the strings in this theme.
 
-> ⚠️ You may need to delete the line: `themesDir: ../../` 
+> ⚠️ You may need to delete the line: `themesDir = "../../"` 
 
 ### Logo and favicon
 
