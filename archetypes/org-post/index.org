@@ -1,0 +1,7 @@
+#+TITLE: {{ replace .Name "-" " " | title }}
+#+DATE: {{ .Date }}
+#+DRAFT: true
+#+TAGS[]: x y
+#+FEATURED_IMAGE:
+
+# more

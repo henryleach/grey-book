@@ -1,6 +1,11 @@
+# 2021.08.20
+
+- Added pagebundle archetype
+- Added org-mode archetype
+
 # 2021.08.19
 
-- Added featured images to summaries.
+- Added featured images to summaries, includes automatically adding one if none is specified in the front matter.
 - Increased site title size
 - Made avatar round/square a Parameter
 

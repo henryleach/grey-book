@@ -1,51 +1,28 @@
 # Hugo Grey Book Theme
 
-A fast, minimalist and responsive hugo theme, forked from Nodejh's [Mini](https://github.com/henryleach/hugo-theme-grey-book) theme. 
+A simple blog theme, forked from Nodejh's [Mini](https://github.com/henryleach/hugo-theme-grey-book) theme. 
 
 _add screenshot here?_
 
-- [Online demo](https://nodejh.github.io/hugo-theme-mini)
 - [Example Site Source](https://github.com/henryleach/hugo-theme-grey-book/tree/master/exampleSite)
 
 Features:
 
-- Fast
-- Minimalist
-- Responsive
+- Minimal
+- Serif font
+- Low contrast
 - Archive
 - Tags
-
+- Automatic featured images in summaries
 
 ## Installation
-
-
-### As a Hugo Module (recommended)
-
-> ⚠️ If you installed a [Hugo binary](https://gohugo.io/getting-started/installing/#binary-cross-platform), you may not have Go installed on your machine. To check if Go is installed:
-> ```
-> $ go version
-> ```
->  Go modules were considered production ready in v1.14. [Download Go](https://golang.org/dl/). 
-
-1. From your project's root directory, initiate the hugo module system if you haven't already:
-
-    ```bash
-    $ hugo mod init github.com/<your_user>/<your_project>
-    ```
-
-2. Add the theme's repo to your `config.yaml`:
-
-    ```yaml
-    theme: 
-       - github.com/henryleach/hugo-theme-grey-book
-    ```
 
 ### As Git Submodule
 
 1. Inside the folder of your Hugo site run:
 
     ```bash
-    $ git submodule add https://github.com/henryleach/hugo-theme-grey-book.git themes/mini
+    $ git submodule add https://github.com/henryleach/hugo-theme-grey-book.git themes/grey-book
     ```
 
 2. Add the theme's directory to your `config.yaml`:
@@ -56,17 +33,37 @@ Features:
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
+### As a Simple Download
+
+Download the theme as a [zip file](https://github.com/henryleach/hugo-theme-grey-book/archive/refs/heads/main.zip) from Github, then unzip it into a folder `themes/grey-book`.
+
 
 ## Getting started
 
-After installing the theme successfully it requires a just a few more steps to get your site running.
+After installing the theme, you need to update the config.toml file in your site's root directory. 
 
 
 ### The config file
 
-Take a look inside the [`exampleSite`](https://github.com/henryleach/hugo-theme-grey-book/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.yaml`](https://github.com/henryleach/hugo-theme-grey-book/blob/master/exampleSite/config.yaml). To use it, copy the [`config.yaml`](https://github.com/henryleach/hugo-theme-grey-book/blob/master/exampleSite/config.yaml) in the root folder of your Hugo site. Feel free to change the strings in this theme.
+Take a look inside the [`exampleSite`](https://github.com/henryleach/hugo-theme-grey-book/tree/main/exampleSite) folder of this theme. You'll find a file called [`config.yaml`](https://github.com/henryleach/hugo-theme-grey-book/blob/master/exampleSite/config.yaml). To use it, copy the [`config.yaml`](https://github.com/henryleach/hugo-theme-grey-book/blob/master/exampleSite/config.yaml) in the root folder of your Hugo site. Feel free to change the strings in this theme.
 
 > ⚠️ You may need to delete the line: `themesDir: ../../` 
+
+### Logo and favicon
+
+Set them to whichever image you like using the parameters. Avatar size is 100x100px.
+
+    ```toml
+    [params]
+	favicon = "/images/yourfavicon.png"
+	avatar = "/images/youravatar.png"
+	roundAvatar = false
+    ```
+
+
+## Features Inherited In This Theme
+
+These features existed in the [Mini](https://github.com/henryleach/hugo-theme-grey-book) theme from which this is derived, and haven't been changed, so should still work, but haven't been tested. 
 
 ### Add Comments
 
@@ -92,16 +89,6 @@ To enable google analytics, add following to your config file:
       enableGoogleAnalytics: true
     ```
 
-### Logo and favicon
-
-Set them to whichever image you like using the parameters. Avatar size is 100x100px.
-
-    ```toml
-    [params]
-	favicon = "/images/yourfavicon.png"
-	avatar = "/images/youravatar.png"
-	roundAvatar = false
-    ```
 ## License
 
 [MIT](https://github.com/henryleach/hugo-theme-grey-book/blob/main/LICENSE.md)
