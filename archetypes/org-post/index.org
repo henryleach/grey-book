@@ -4,4 +4,9 @@
 #+TAGS[]: x y
 #+FEATURED_IMAGE:
 
+#+attr_html: :width 580px
+#+CAPTION: 
+[[ image_name.png ] ]
+
+
 # more

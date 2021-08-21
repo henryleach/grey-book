@@ -1,0 +1,59 @@
+baseURL = "https://example.com"
+languageCode = "en-us"
+title = "Hugo"
+theme = "grey-book"
+paginate = 3
+
+# for exampleSite only, you need to delete the line below
+# when using as the config file for a real site.
+themesDir = "../../"
+
+
+hasCJKLanguage = true
+
+googleAnalytics = "your-google-analytics-id"
+disqusShortname = "your-disqus-shortname"
+
+[permalinks]
+posts = "/posts/:title/"
+
+[markup.highlight]
+guessSyntax = true
+style = "emacs"
+
+[social]
+github = "https://www.github.com"
+twitter = "https://www.twitter.com"
+stackoverflow = "https://www.stackoverflow.com"
+facebook = "https://www.facebook.com"
+linkedin = "https://www.linkedin.com"
+
+[params]
+author = "Author"
+bio = "Software Engineer"
+favicon = "/images/default_favicon.png"
+avatar = "/images/default_avatar_192.png"
+roundAvatar = true # Default: false
+avatarLink = "https://www.example.com"
+# Site Description, used in HTML meat
+description = "My Blog"
+enableRSS = true
+# To enable comments, you may need to set `disqusShortname`
+enableComments = true
+# To enable comments, you may need to set `googleAnalytics`
+enableGoogleAnalytics = true
+home = "" # Default: Home
+about = "" # Default: About
+archive = "" # Default: Archive
+tags = ""  # Default: Tags
+subscribe = ""  # Default: Subscribe
+olderPosts = "" # Default: Older Posts
+newerPosts = "" # Default: Newer Posts
+copyright = ""  # Default: © Copyright 2021 ❤ author
+title404 = ""  # Default: 404 - Page Not Found
+subtitle404 = "" # Default: The content you're looking for doesn't seem to exist.
+readMore = ""  # Default: Read More
+
+[[params.links]]
+name = "Hugo.io"
+path = "https://gohugo.io"

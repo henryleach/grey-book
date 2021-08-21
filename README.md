@@ -53,7 +53,7 @@ Take a look inside the [`exampleSite`](https://github.com/henryleach/hugo-theme-
 
 Set them to whichever image you like using the parameters. Avatar size is 100x100px.
 
-    ```toml
+    ```
     [params]
 	favicon = "/images/yourfavicon.png"
 	avatar = "/images/youravatar.png"

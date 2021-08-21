@@ -1,0 +1,94 @@
+#+TITLE: Org Mode Syntax Guide
+#+AUTHOR: The Little People
+#+DATE: 2019-03-10T13:55:46+02:00
+#+DRAFT: true
+#+TAGS[]: org-mode
+#+CATEGORIES[]: themes syntax
+#+FEATURED_IMAGE:
+
+#+attr_html: :width 580px
+#+CAPTION:  Photo by [[https://unsplash.com/@honza_kahanek?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText][Jan Kahánek]] on [[https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText][Unsplash]]
+[[jan-kahanek-g3O5ZtRk2E4-unsplash.jpg]]
+
+This article offers a sample of basic Org Mode syntaz that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+
+I this theme there's a [[https://orgmode.org][Org Mode]] pageBundle archetype you can use, simply:
+
+=$ hugo new --kind org-post /posts/my-new-post-name=
+
+and you're ready to go. 
+
+# more
+
+Org Mode is like Markdown, but /better/. It's a form of syntax you can use to format text, but within [[https://www.gnu.org/software/emacs/][GNU Emacs]] it's an interactive way of working with documents, and well /organising/ things. 
+
+* Headings
+  The following HTML =<h1>= - =h6= elements represents six levels of section headings. =<h1>= is the highest section level while =<h6>= is the lowest.
+
+* Heading 1
+
+** Heading 2
+
+*** Heading 3
+
+**** Heading 4
+
+***** Heading 5
+
+****** Heading 6
+
+       Do you need this many headings in a website this simple?
+
+* Paragraph
+  Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+
+Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+
+* Blockquotes
+
+  The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a preceeding "#+CAPTION:" element. You can insert a quote block wiht the template shortcut =C-c C-,= the select =q=.
+
+*** Blockquote without attribution
+    #+begin_quote
+    Tiam, ad mint andaepu dandae nostion secatur sequo quae. *Note* that you can use /org-mode syntax/ within a blockquote.
+    #+end_quote
+  
+*** Blockquote with attribution
+      #+CAPTION: Voltaire[fn:1]
+    #+begin_quote
+    A witty saying proves nothing.
+    #+end_quote
+[fn:1] [[https://en.wikipedia.org/wiki/Voltaire][Voltaire]] was a known as a bit of a wit, and should he have existed, he would almost certainly have blogged with Org-Mode and this Hugo theme. A pity he passed away in 1778 really.
+
+* Tables
+
+  [[https://orgmode.org/manual/Tables.html#Tables][Tables]] /are/ a part of the org-mode spec, and awesome. Hugo supports them out-of-the-box.
+
+  | Name                                              | Age |
+  | Bob                                               |  27 |
+  | Alice                                             |  23 |
+  | Serena[fn:2], who can do maths in a table, like add the previous rows |  50 |
+ #+TBLFM: @4$2=vsum(@2..3)
+[fn:2] Serena, like the rest of us, just wants you to know how great Org Mode really is. Admittidly, she's a little smug about it.
+
+*** Inline Org Mode within Tables
+
+  | Italics   | Bold     | Code   |
+| /italics/  | **bold** | =code= |
+  
+* Code Blocks
+
+Code block in a source code block.
+  
+  #+begin_src html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example HTML5 Document</title>
+</head>
+<body>
+  <p>Test</p>
+</body>
+</html>
+  #+end_src
