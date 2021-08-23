@@ -1,7 +1,7 @@
 baseURL = "https://grey-book-theme-example.onrender.com"
 languageCode = "en-us"
 title = "Hugo"
-theme = "hugo-theme-grey-book"
+theme = "grey-book"
 paginate = 3
 
 # for exampleSite only, you need to delete the line below
