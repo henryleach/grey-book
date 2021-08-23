@@ -1,5 +1,6 @@
 # Hugo default output directory
 /public
+/resources
 
 # Windows
 Thumbs.db
@@ -13,3 +14,4 @@ $RECYCLE.BIN/
 # exampleSite
 exampleSite/themes
 exampleSite/public
+exampleSite/resources
