@@ -32,11 +32,11 @@ linkedin = "https://www.linkedin.com"
 author = "Author"
 bio = "Software Engineer"
 favicon = "/images/default_favicon.png"
-avatar = "/images/default_avatar_192.png"
+avatar = "/images/avatar.jpg"
 roundAvatar = true # Default: false
 avatarLink = "https://www.example.com"
 # Site Description, used in HTML meat
-description = "My Blog"
+description = "My Website"
 enableRSS = true
 # To enable comments, you may need to set `disqusShortname`
 enableComments = true

@@ -91,14 +91,29 @@ p {
   margin-block-start: 1.5em;
   margin-block-end: 1.5em;
 }
-p,
-pre {
-  /*line-break: anywhere;
-  word-break: break-all; 
-   */
+
+
+/* Prevents the <p> tags added in
+org mode list items adding
+more seperation */
+li > p {
+    display: inline;
 }
-.markdown-image img {
-  max-width: 100%;
+
+/* Try and make the org mode footnotes
+a little more compact, and the reference
+number large enought to actually click */
+
+.footnote-definitions sup {
+    font-size: 1em;
+}
+
+div.footnote-body > p {
+    display: inline;
+}
+
+img {
+    max-width: 100%;
 }
 
 .highlight pre {
