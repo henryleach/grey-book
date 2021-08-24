@@ -33,7 +33,7 @@ The following HTML `<h1>`—`<h6>` elements represent six levels of section head
 
 ## Images
 
-![](/images/loch_02.jpg)
+![](loch_02.jpg)
 
 ## Paragraph
 

@@ -4,16 +4,19 @@ A simple blog theme, forked from Nodejh's [Mini](https://github.com/henryleach/h
 
 _add screenshot here?_
 
-- [Example Site Source](https://github.com/henryleach/hugo-theme-grey-book/tree/master/exampleSite)
+- [Example Site Source](https://grey-book-theme-example.onrender.com)
 
 Features:
 
-- Minimal
+- Simple
 - Serif font
 - Low contrast
 - Archive
 - Tags
-- Automatic featured images in summaries
+- Org Mode friendly
+- Refined
+- Suave
+- Has a long, warm, rich aftertaste like a good whisky
 
 ## Installation
 

@@ -10,7 +10,7 @@ This article offers a sample of basic Org Mode syntax that can be used in Hugo c
 
 # more
 
-This theme has some tweaks in the CSS to try and make the basic usage of Org Mode syntax produce results mostly in the same way this theme renders Markdown unput. See notes at [[#headline-24][Differences Between Org Mode and Markdown]]
+This theme has some tweaks in the CSS to try and make the basic usage of Org Mode syntax produce results morein line with how this theme renders Markdown unput. See notes at [[#headline-24][Differences Between Org Mode and Markdown]]
 
 In this theme there's a [[https://orgmode.org][Org Mode]] pageBundle archetype you can use, simply:
 
@@ -42,18 +42,9 @@ and you're ready to go.
 
 Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
 
-* Text Typography
-| Org Mode Syntax | Rendered      |
-| ~/Italic/~        | /Italic/        |
-| ~*Bold*~          | *Bold*          |
-| ~_Underline_~     | _Underline_     |
-| ~~Code~~          | ~Code~          |
-| ~=Verbatum=~      | =Verbatum=      |
-| ~+Strikethrough+~ | +Strikethrough+ |
-
 * Blockquotes
 
-  The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a preceeding "#+CAPTION:" element. You can insert a quote block wiht the template shortcut =C-c C-,= the select =q=.
+  The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a proceeding =#+CAPTION:= element. You can insert a quote block with the usual template shortcut =C-c C-,=  =q=.
 
 *** Blockquote without attribution
     #+begin_quote
@@ -65,21 +56,28 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
     #+begin_quote
     A witty saying proves nothing.
     #+end_quote
-[fn:1] [[https://en.wikipedia.org/wiki/Voltaire][Voltaire]] was a known as a bit of a wit, and should he have existed, he would almost certainly have blogged with Org Mode and this Hugo theme. A pity he passed away in 1778 really.
+[fn:1] [[https://en.wikipedia.org/wiki/Voltaire][Voltaire]] was a known as a bit of a wit, and should the internet have existed then, he would almost certainly have blogged with Org Mode and this Hugo theme. It's a pity he passed away in 1778 really.
 
 * Tables
 
   [[https://orgmode.org/manual/Tables.html#Tables][Tables]] /are/ a part of the org-mode spec, and awesome. Hugo supports them out-of-the-box.
 
   | Name                                      | Age |
+  |-------------------------------------------+-----|
   | Bob                                       |  27 |
   | Alice                                     |  23 |
 
 *** Inline Org Mode within Tables
 
-  | Italics   | Bold     | Code   |
-| /italics/  | **bold** | =code= |
-  
+  | Org Mode Syntax | Rendered      |
+  |-----------------+---------------|
+  | ~/Italic/~        | /Italic/        |
+  | ~*Bold*~          | *Bold*          |
+  | ~_Underline_~     | _Underline_     |
+  | ~~Code~~          | ~Code~          |
+  | ~=Verbatum=~      | =Verbatum=      |
+  | ~+Strikethrough+~ | +Strikethrough+ |
+
 * Code Blocks
   
 *** Code block within a source code block
@@ -151,7 +149,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
   
 * Differences Between Org Mode and Markdown
 
-  Org Mode has different goals to Markdown, Org Mode is an interactive document format, more than a syntax for marking up text, but it can be used for that as well. 
+  Org Mode has different goals to Markdown, Org Mode is more of an interactive document format, than a syntax for marking up text, but it can be used for that as well. 
 
 For the fine details on how org-mode files are rendered, see the [[https://github.com/niklasfasching/go-org][Go-Org]] page for the details. They will be rendered slightly differently to those written in Markdown. If you want more precision then you're probably best using something like [[https://github.com/kaushalmodi/ox-hugo][Ox-Hugo]] in your workflow, or even Org Mode's own HTML exporter.
 
@@ -166,7 +164,7 @@ Images without captions should be treated the same, but if you add a caption it'
 
 ** Lists
 
-Lists of all types seem to be rendered with a bonus =<p>= in them, this is negated by setting =display: inline;= in the style sheet. 
+Lists of all types seem to be rendered with a bonus =<p>= in them, as shown below,, this is negated by setting =display: inline;= in the style sheet. 
    
 #+begin_src HTML
 <ol>
