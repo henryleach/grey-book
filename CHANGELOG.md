@@ -1,3 +1,8 @@
+# 2021.08.26
+
+- Updated Readme
+- Added links to hosted example site and the exampleSite config file.
+
 # 2021.08.20
 
 - Added pagebundle archetype

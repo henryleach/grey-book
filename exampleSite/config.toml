@@ -8,6 +8,9 @@ paginate = 3
 # when using as the config file for a real site.
 themesDir = "../../"
 
+[markup.goldmark.renderer]
+# Enables inline rendering of HTML tags in Markdown posts.
+unsafe = true
 
 hasCJKLanguage = true
 
@@ -55,5 +58,5 @@ subtitle404 = "" # Default: The content you're looking for doesn't seem to exist
 readMore = ""  # Default: Read More
 
 [[params.links]]
-name = "Hugo.io"
-path = "https://gohugo.io"
+name = "Theme Source"
+path = "https://github.com/henryleach/grey-book"

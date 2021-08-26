@@ -3,10 +3,10 @@ license = "MIT"
 licenselink = "https://github.com/henryleach/hugo-theme-grey-book/blob/main/LICENSE.md"
 description = "A simple, grey hugo theme for bloggers with ideas above their station."
 homepage = "https://github.com/henryleach/hugo-theme-grey-book"
-tags = ["blog", "fast", "minimalist", "responsive", "simple", "tags", "pages", "grey", "suave"]
-features = ["fast", "minimalist", "responsive", "archive", "tags"]
+tags = ["blog", "fast", "responsive", "simple", "tags", "pages", "grey", "suave"]
+features = ["fast", "responsive", "archive", "tags"]
 min_version = "0.75.0"
 
 [author]
-    name = "Henry"
-    homepage = "https://github.com/henryleach"
+    name = "H"
+    homepage = "https://www.henryleach.com"

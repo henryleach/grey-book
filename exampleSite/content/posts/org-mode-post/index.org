@@ -10,7 +10,7 @@ This article offers a sample of basic Org Mode syntax that can be used in Hugo c
 
 # more
 
-This theme has some tweaks in the CSS to try and make the basic usage of Org Mode syntax produce results morein line with how this theme renders Markdown unput. See notes at [[#headline-24][Differences Between Org Mode and Markdown]]
+This theme has some tweaks in the CSS to try and make the basic usage of Org Mode syntax produce results similar to that from the Markdown Renderer. See notes at [[#headline-24][Differences Between Org Mode and Markdown]]
 
 In this theme there's a [[https://orgmode.org][Org Mode]] pageBundle archetype you can use, simply:
 
