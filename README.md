@@ -2,7 +2,7 @@
 
 A simple, blog focused theme for the sophisticated reader and blogger with ideas above their station. 
 
-_add screenshot here?_
+![](images/tn.png)
 
 - [Example Site Source](https://grey-book-theme-example.onrender.com)
 
