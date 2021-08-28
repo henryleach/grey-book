@@ -4,7 +4,7 @@ A simple, blog focused theme for the sophisticated reader and blogger with ideas
 
 ![](images/tn.png)
 
-- [Example Site Source](https://grey-book-theme-example.onrender.com)
+- [Example Site](https://grey-book-theme-example.onrender.com)
 
 Features:
 
@@ -21,7 +21,7 @@ Features:
 1. Inside the folder of your Hugo site run:
 
 ```bash
-$ git submodule add https://github.com/henryleach/hugo-theme-grey-book.git themes/grey-book
+$ git submodule add https://github.com/henryleach/grey-book.git themes/grey-book
 ```
 
 2. Add the theme's directory to your `config.toml`:
@@ -34,7 +34,7 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 
 ### As a Simple Download
 
-Download the theme as a [zip file](https://github.com/henryleach/hugo-theme-grey-book/archive/refs/heads/main.zip) from Github, then unzip it into a folder `themes/grey-book`.
+Download the theme as a [zip file](https://github.com/henryleach/grey-book/archive/refs/heads/main.zip) from Github, then unzip it into a folder `themes/grey-book`.
 
 
 ## Getting started
@@ -44,7 +44,7 @@ After installing the theme, you need to update the `config.toml` file in your si
 
 ### Configuration
 
-Inside the [`exampleSite`](https://github.com/henryleach/hugo-theme-grey-book/tree/main/exampleSite) folder of this theme is a [`config.toml`](https://github.com/henryleach/hugo-theme-grey-book/blob/master/exampleSite/config.toml) example config file. Copy it to the root directory of your site and change the options as you please.
+Inside the [`exampleSite`](https://github.com/henryleach/grey-book/tree/main/exampleSite) folder of this theme is a [`config.toml`](https://github.com/henryleach/grey-book/blob/master/exampleSite/config.toml) example config file. Copy it to the root directory of your site and change the options as you please.
 
 > ⚠ You will probably need to delete the line: `themesDir = "../../"` which is needed to make the example theme site work.
 
@@ -81,7 +81,7 @@ $ hugo new --kind org-post /posts/my-new-post-name
 
 ## Features Inherited In This Theme
 
-These features existed in the [Mini](https://github.com/henryleach/hugo-theme-grey-book) theme from which this is derived, and haven't been changed, so should still work, but they haven't been tested. 
+These features existed in the  [Mini](https://github.com/nodejh/hugo-theme-mini) theme from which this is derived, and haven't been changed, so should still work, but they haven't been tested. 
 
 ### Add Comments
 
@@ -109,7 +109,7 @@ To enable google analytics, add following to your config file:
 
 ## License
 
-[MIT](https://github.com/henryleach/hugo-theme-grey-book/blob/main/LICENSE.md)
+[MIT](https://github.com/henryleach/grey-book/blob/main/LICENSE.md)
 
 ## Acknowledgements
 
