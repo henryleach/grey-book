@@ -8,14 +8,14 @@ paginate = 3
 # when using as the config file for a real site.
 themesDir = "../../"
 
-[markup.goldmark.renderer]
-# Enables inline rendering of HTML tags in Markdown posts.
-unsafe = true
-
 hasCJKLanguage = true
 
 googleAnalytics = "your-google-analytics-id"
 disqusShortname = "your-disqus-shortname"
+
+[markup.goldmark.renderer]
+# Enables inline rendering of HTML tags in Markdown posts.
+unsafe = true
 
 [permalinks]
 posts = "/posts/:title/"
@@ -43,8 +43,9 @@ description = "Example Site of the Grey Book Hugo Theme"
 enableRSS = true
 # To enable comments, you may need to set `disqusShortname`
 enableComments = true
-# To enable comments, you may need to set `googleAnalytics`
+# To enable analytics, you may need to set `googleAnalytics`
 enableGoogleAnalytics = true
+insightsAnalytics = false # normally "your-getinsights.io-id"
 home = "" # Default: Home
 about = "" # Default: About
 archive = "" # Default: Archive

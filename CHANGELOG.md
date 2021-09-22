@@ -3,6 +3,9 @@
 - Change CSS to SCSS with pipe, will require extended version, and allow parameters in CSS
 - Add option to convert images to WebP.
 
+## 2021.09
+- Added Insights.io analytics Paritial and parameter
+
 ## 2021.08.26
 
 - Updated Readme

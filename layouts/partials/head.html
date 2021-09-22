@@ -17,6 +17,10 @@
     {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
 
+{{ if .Site.Params.insightsAnalytics }}
+   {{ partial "insightsanalytics.html" . }}
+{{ end }}
+
 
 {{ if .OutputFormats.Get "RSS" }}
   {{ with .OutputFormats.Get "RSS" }}
