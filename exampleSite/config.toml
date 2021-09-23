@@ -40,6 +40,7 @@ roundAvatar = true # Default: false
 avatarLink = "https://grey-book-theme-example.onrender.com"
 # Site Description, used in HTML meat
 description = "Example Site of the Grey Book Hugo Theme"
+keywords = "Hugo, theme, exampleSite"
 enableRSS = true
 # To enable comments, you may need to set `disqusShortname`
 enableComments = true

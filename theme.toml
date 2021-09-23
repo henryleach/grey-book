@@ -5,7 +5,9 @@ description = "A simple, grey hugo theme for bloggers with ideas above their sta
 homepage = "https://github.com/henryleach/grey-book"
 tags = ["blog", "fast", "responsive", "simple", "tags", "pages", "grey", "suave"]
 features = ["fast", "responsive", "archive", "tags"]
-min_version = "0.75.0"
+min_version = 0.83
+# This theme requires the extended version of Hugo
+require_extended = true
 
 [author]
     name = "H"
