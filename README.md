@@ -79,33 +79,51 @@ or for a Org Mode based post:
 $ hugo new --kind org-post /posts/my-new-post-name
 ```
 
-## Features Inherited In This Theme
-
-These features existed in the  [Mini](https://github.com/nodejh/hugo-theme-mini) theme from which this is derived, and haven't been changed, so should still work, but they haven't been tested. 
-
 ### Add Comments
 
 To enable comments, add following to your config file:
 
-- Disqus shortname: `disqusShortname: your-disqus-shortname`
-- Enable Comment:
+- Disqus shortname: `disqusShortname = "your-disqus-shortname"`
+- Enable Comments:
 
-    ```yaml
-    params:
-      enableComments: true
-    ```
+```
+[params]
+enableComments = true
+ ```
+ 
+(This should work as it's based on Hugo built ins, but is untested as I don't use comments.)
+
+## Analytics
+
+There are templates to add analytics scripts for Google and/or [Insights](https://getinsights.io).
+
+To avoid these being triggered in testing, they are only rendered if either you have an environment variable called 'HUGO_ENV' set to "production" or in the config file you have the 'env' variable set.
+
+```
+[params]
+env = "production"
+```
 
 ### Google Analytics
 
-To enable google analytics, add following to your config file:
+To enable Google analytics, add following to your config file:
 
-- Google Analytics ID: `googleAnalytics: your-google-analytics-id`
+- Google Analytics ID: `googleAnalytics = "your-google-analytics-id"`
 - Enable Google Analytics:
 
-    ```yaml
-    params:
-      enableGoogleAnalytics: true
-    ```
+```
+[params]
+enableGoogleAnalytics = true
+```
+
+### Insights Analytics
+
+Set the following in the config file, if omitted or set to `false` it is not rendered.
+
+```
+[params]
+insightsAnalytics = "your-getinsights.io-id"
+```
 
 ## License
 

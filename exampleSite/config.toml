@@ -3,12 +3,13 @@ languageCode = "en-us"
 title = "Grey Book"
 theme = "grey-book"
 paginate = 3
+enableRobotsTXT = true
 
 # for exampleSite only, you need to delete the line below
 # when using as the config file for a real site.
 themesDir = "../../"
 
-hasCJKLanguage = true
+hasCJKLanguage = false
 
 googleAnalytics = "your-google-analytics-id"
 disqusShortname = "your-disqus-shortname"
@@ -38,15 +39,22 @@ favicon = "/images/avatar.jpg"
 avatar = "/images/avatar.jpg"
 roundAvatar = true # Default: false
 avatarLink = "https://grey-book-theme-example.onrender.com"
-# Site Description, used in HTML meat
+# Site Description, used in HTML head
 description = "Example Site of the Grey Book Hugo Theme"
 keywords = "Hugo, theme, exampleSite"
+
+
 enableRSS = true
 # To enable comments, you may need to set `disqusShortname`
 enableComments = true
 # To enable analytics, you may need to set `googleAnalytics`
 enableGoogleAnalytics = true
 insightsAnalytics = false # normally "your-getinsights.io-id"
+
+# set to "production" when in production use, or use
+# HUGO_ENV="production" in environment variables.
+env = "test" 
+
 home = "" # Default: Home
 about = "" # Default: About
 archive = "" # Default: Archive

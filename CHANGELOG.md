@@ -1,11 +1,13 @@
-## Upcoming Changes
+## TODO
+
 - Change CSS to SCSS with pipe, will require extended version, and allow parameters in CSS
-- Add option to convert images to WebP.
+- Add option to convert images to WebP
 
 ## 2021.09
 - Added Insights.io analytics Paritial and parameter
 - Added Keywords metatag into partial head.html
 - Upped min required version to 0.83 for WebP and note that extended verison is required (there doesn't appear to be a good way to specify this requirement in the theme.toml)
+- Render analytics scripts only in production. 
 
 ## 2021.08.26
 

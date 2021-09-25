@@ -6,21 +6,20 @@
 {{ hugo.Generator }}
 {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
 {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-  <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+  {{ if .Site.Params.enableGoogleAnalytics }} 
+    {{ template "_internal/google_analytics_async.html" . }}
+  {{ end }}
+
+  {{ if .Site.Params.insightsAnalytics }}
+    {{ partial "insightsanalytics.html" . }}
+  {{ end }}
 {{ else }}
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 {{ end }}
 
 <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
 <link rel="shortcut icon" href="{{ $.Site.Params.favicon | relURL }}" type="image/png" />
-
-{{ if .Site.Params.enableGoogleAnalytics }} 
-    {{ template "_internal/google_analytics_async.html" . }}
-{{ end }}
-
-{{ if .Site.Params.insightsAnalytics }}
-   {{ partial "insightsanalytics.html" . }}
-{{ end }}
 
 
 {{ if .OutputFormats.Get "RSS" }}
