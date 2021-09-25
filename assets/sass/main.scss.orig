@@ -1,10 +1,14 @@
+/* Main colour variables */
+
+
 body {
     font-size: medium;
     font-family: Georgia, serif;
     color: #404040;
     line-height: 1.75;
     letter-spacing: 0.008em;
-}
+    //background-color: red;
+    }
 
 a {
   text-decoration: none;
@@ -95,14 +99,14 @@ p {
 
 /* Prevents the <p> tags added in
 org mode list items adding
-more seperation */
+more separation */
 li > p {
     display: inline;
 }
 
 /* Try and make the org mode footnotes
 a little more compact, and the reference
-number large enought to actually click */
+number large enough to actually click */
 
 .footnote-definitions sup {
     font-size: 1em;
@@ -157,7 +161,7 @@ pre code {
 /* navigation */
 
 nav.navigation {
-    padding: 20px 20px 0;
+    padding: 20px 20px 0px;
     background: #fff;
     background: rgba(255, 255, 255, 0.9);
     margin: 0 auto;

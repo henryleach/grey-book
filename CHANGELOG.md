@@ -1,13 +1,19 @@
 ## TODO
-
-- Change CSS to SCSS with pipe, will require extended version, and allow parameters in CSS
 - Add option to convert images to WebP
+- Make Nav hide under button for mobile screens
+- Make column/image width into a parameter so it's consistent across all page types, text and images
+- Fix repeated .tag info
+- Checkl Markdown and org-mode code block rendering for differences and font size
+- Change inline code background colour
 
 ## 2021.09
 - Added Insights.io analytics Paritial and parameter
 - Added Keywords metatag into partial head.html
 - Upped min required version to 0.83 for WebP and note that extended verison is required (there doesn't appear to be a good way to specify this requirement in the theme.toml)
 - Render analytics scripts only in production. 
+- Moved CSS to SASS with pipe, will require Hugo extended from now on.
+- Cleaned CSS, original was 7702b, 526 lines, now 
+
 
 ## 2021.08.26
 
