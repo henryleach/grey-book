@@ -18,9 +18,7 @@
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 {{ end }}
 
-{{ $cssopts := (dict "targetPath" "style.css" "outputStyle" "compressed") }}
-{{ $style := resources.Get "sass/main.scss" | resources.ToCSS $cssopts }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
+<link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
 <link rel="shortcut icon" href="{{ $.Site.Params.favicon | relURL }}" gtype="image/png" />
 
 
