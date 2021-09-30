@@ -134,10 +134,11 @@ img {
 .highlight pre {
     padding: 7px;
     /* Something here to fix stuck background?*/
-    overflow-x: auto;
-    /* What about https://gohugo.io/content-management/image-processing/
-       like pop-out expanding boxes? */
+    overflow-x: hidden;
+}
 
+.highlight pre::-webkit-scrollbar {
+    display: none;
 }
 
 .highlight pre:hover {
