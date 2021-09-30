@@ -125,14 +125,31 @@ img {
     max-width: 100%;
 }
 
-.highlight pre {
-    padding: 7px;
-}
-
+/* Code Highlighting */
 .highlight {
     max-width: 100%;
-    overflow-x: auto;
+
 }
+
+.highlight pre {
+    padding: 7px;
+    /* Something here to fix stuck background?*/
+    overflow-x: auto;
+    /* What about https://gohugo.io/content-management/image-processing/
+       like pop-out expanding boxes? */
+
+}
+
+.highlight pre:hover {
+    /* But only when it's wider than the normal width*/
+    width: max-content;
+    /* This isn't quite perfect, at some resolutions
+    it still causes a little jitter to another size
+    on hover when the content isn't wider than than
+    the container*/
+    min-width: 98%;
+}
+
 p code {
     font-family: SFMono-Regular, Consolas, Liberation Mono, Courier, monospace;
     font-size: inherit;

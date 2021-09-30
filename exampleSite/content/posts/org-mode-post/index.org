@@ -109,6 +109,11 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
   </body>
   </html>
   {{< /highlight >}}
+  
+*** Code that is wider that the column width
+#+begin_src bash
+echo "What do you mean this line of code is excessivly long and doesn't wrap well?"
+#+end_src
 
 * List Types
 

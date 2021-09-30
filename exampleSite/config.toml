@@ -23,7 +23,8 @@ posts = "/posts/:title/"
 
 [markup.highlight]
 guessSyntax = true
-style = "emacs"
+style = "monokai"
+lineNos = false
 
 [social]
 github = "https://www.github.com"

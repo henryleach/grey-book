@@ -117,6 +117,13 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 </html>
 {{< /highlight >}}
 
+
+#### Code that is wider that the column width
+```bash
+$ echo "What do you mean this line of code is excessivly long and doesn't wrap well?"
+```
+
+
 ## List Types
 
 #### Ordered List
