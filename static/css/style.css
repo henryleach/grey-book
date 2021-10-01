@@ -173,13 +173,38 @@ pre code {
     margin-top: 48px;
 }
 
-.pagination .pre {
+.pagination .prev {
     float: left;
 }
 
 .pagination .next {
     float: right;
 }
+
+.pagination_row {
+    margin-top: 48px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.col_left {
+    flex: 1 1 0px;
+    text-align: left;
+    padding: 5px
+}
+
+.col_right {
+    flex: 1 1 0px;
+    text-align: right;
+    padding: 5px
+}
+
+.pagination_row .arrow {
+    //font-size: 1em;
+    max-width: fit-content;
+}
+
 
 /* navigation */
 nav.navigation {
@@ -456,7 +481,7 @@ nav.navigation a.button {
     display: inline-block;
     margin: 7px 7px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width:680px) {
     #tags {
 	margin: 0 auto 0 auto;
     }
