@@ -1,9 +1,11 @@
 ## TODO
 - Add option to convert images to WebP
-- Make Nav more mobile screen friendly
 - Make column/image width into a parameter so it's consistent across all page types, text and images
-- Fix repeated .tag info
 - Check Markdown and org-mode code block rendering for differences and font size
+- Remove post names in post page pagination for mobile screens and increase arrow size. 
+
+## 2021.10
+- post pagination hides post names and increases arrow size on mobile.
 
 ## 2021.09
 - Added Insights.io analytics Paritial and parameter
@@ -12,7 +14,6 @@
 - Render analytics scripts only in production.
 - Inline code font matches size of text
 - navigation scrolls horizontally on mobile screen sizes.
-
 
 ## 2021.08.26
 

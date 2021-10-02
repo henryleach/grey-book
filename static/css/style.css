@@ -205,6 +205,15 @@ pre code {
     max-width: fit-content;
 }
 
+@media screen and (max-width: 680px){
+    .pagination_row .mobile_hide > a {
+	display: none;
+    }
+
+    .pagination_row .arrow {
+	font-size: 2em;
+    }
+}
 
 /* navigation */
 nav.navigation {
