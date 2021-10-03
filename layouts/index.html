@@ -8,7 +8,6 @@
     {{ $title := .Title }}
     {{ $summary := .Summary }}
     {{ $date := dateFormat "Jan 2, 2006" .Date }}
-    {{/* $origImage := (.Resources.GetMatch (print "*" .Params.featured_image)) */}}
     {{ $origImage := partial "func/GetFeaturedImage.html" . }}
     <section class="item">
         <div>

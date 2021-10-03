@@ -1,14 +1,15 @@
 <header class="profile">
-
+    {{- $orig := resources.Get .Site.Params.avatar -}}
+    {{ $image := $orig.Resize "150x" }}
     {{ if .Site.Params.roundAvatar }}
-        <style> .profile .avatar { border-radius: 50%; } </style>
+    <style> .profile .avatar { border-radius: 50%; } </style>
     {{ end }}
     {{ if .Site.Params.avatarLink }}
-        <a href="{{ .Site.Params.avatarLink }}">
-          <img class="avatar" alt="avatar" src="{{ $.Site.Params.avatar | relURL }}" />
-        </a>
+    <a href="{{ .Site.Params.avatarLink }}">
+        <img class="avatar" alt="avatar" src="{{ $image.RelPermalink }}" />
+    </a>
     {{ else }}
-        <img class="avatar" alt="avatar" src="{{ $.Site.Params.avatar | relURL }}" />
+    <img class="avatar" alt="avatar" src="{{ $image.RelPermalink }}" />
     {{ end }}
 
     <h1>{{ .Site.Title }}</h1>

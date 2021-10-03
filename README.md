@@ -50,12 +50,12 @@ Inside the [`exampleSite`](https://github.com/henryleach/grey-book/tree/main/exa
 
 ### Logo and Favicon
 
-Set them to whichever image you like using the parameters. Avatar size is 100x100px.
+Set them to whichever image you like using the parameters below. This path is relative to your assets directory, e.g. `assets` unless you've modified that value. Avatar size is 150x150px.
 
 ```
 [params]
-favicon = "/images/yourfavicon.png"
-avatar = "/images/youravatar.png"
+favicon = "images/yourfavicon.jpg"
+avatar = "images/youravatar.jpg"
 roundAvatar = false
 ```
 
