@@ -19,7 +19,7 @@
 {{ end }}
 
 <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
-<link rel="shortcut icon" href="{{ $.Site.Params.favicon | relURL }}" gtype="image/png" />
+<link rel="shortcut icon" href="{{ (resources.Get $.Site.Params.favicon).RelPermalink }}" gtype="image/jpg" />
 
 
 {{ if .OutputFormats.Get "RSS" }}

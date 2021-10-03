@@ -33,11 +33,12 @@ stackoverflow = "https://www.stackoverflow.com"
 facebook = "https://www.facebook.com"
 linkedin = "https://www.linkedin.com"
 
+
 [params]
 author = "Author"
 bio = "Hugo Theme Example Site"
-favicon = "/images/avatar.jpg"
-avatar = "/images/avatar.jpg"
+favicon = "images/avatar.jpg"
+avatar = "images/avatar.jpg"
 roundAvatar = true # Default: false
 avatarLink = "https://grey-book-theme-example.onrender.com"
 # Site Description, used in HTML head

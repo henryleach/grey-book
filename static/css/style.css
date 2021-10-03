@@ -5,6 +5,7 @@
     --textLightColour: #757575;
     --linkColour: #5badf0;
     --linkHoverColour: #0366d6;
+    --listColumnWidth: 580px;
 }
 
 body {
@@ -201,8 +202,7 @@ pre code {
 }
 
 .pagination_row .arrow {
-    //font-size: 1em;
-    max-width: fit-content;
+    max-width: 2em; //fit-content;
 }
 
 @media screen and (max-width: 680px){
@@ -212,6 +212,7 @@ pre code {
 
     .pagination_row .arrow {
 	font-size: 2em;
+	font-weight: bold;
     }
 }
 
@@ -321,7 +322,7 @@ nav.navigation a.button {
 
 /* index post list */
 #list-page {
-    max-width: 580px;
+    max-width: var(--listColumnWidth);
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -429,7 +430,7 @@ nav.navigation a.button {
 
 
 #archive {
-    max-width: 580px;
+    max-width: var(--listColumnWidth);
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -514,7 +515,7 @@ nav.navigation a.button {
 
 /* section page */
 #section {
-    max-width: 580px;
+    max-width: var(--listColumnWidth);
     margin: 48px auto 0 auto;
     padding: 0 12px;
 }
@@ -525,7 +526,7 @@ nav.navigation a.button {
 
 /* 404 page */
 #page-404 {
-    max-width: 580px;
+    max-width: var(--listColumnWidth);
     margin: 0 auto;
     padding: 0 24px;
 }
