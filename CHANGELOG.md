@@ -8,7 +8,7 @@
 ## 2021.09
 - Added Insights.io analytics Partial and parameter
 - Added Keywords metatag into partial head.html
-- Upped min required version to 0.83 for WebP and note that extended version is required (there doesn't appear to be a good way to specify this requirement in the theme.toml)
+- Upped min required Hugo version to 0.83
 - Render analytics scripts only in production.
 - Inline code font matches size of text
 - navigation scrolls horizontally on mobile screen sizes.
