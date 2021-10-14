@@ -1,5 +1,6 @@
 ## TODO
-- Add option to convert images to WebP, currently doesn't appear to be a simple way to do this globally
+- Add option to convert images to WebP, currently doesn't appear to be a simple way to do this globally. Only for Hugo extended.
+- Specify the height and width of all images in <img> tag to help prevent big resizes during rendering. 
 
 ## 2021.10
 - Post pagination hides post names and increases arrow size on mobile.
