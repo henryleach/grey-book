@@ -169,7 +169,7 @@ Images without captions should be treated the same, but if you add a caption it'
 
 ** Lists
 
-Lists of all types seem to be rendered with a bonus =<p>= in them, as shown below,, this is negated by setting =display: inline;= in the style sheet. 
+Lists of all types seem to be rendered with a bonus =<p>= in them, as shown below, this is negated by setting =display: inline;= in the style sheet. 
    
 #+begin_src HTML
 <ol>
