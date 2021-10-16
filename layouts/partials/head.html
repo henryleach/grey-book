@@ -1,21 +1,37 @@
+<!-- -*- engine:go -*- -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
-<meta name="keywords" content="{{if .IsHome}}{{.Site.Params.keywords}}{{else}}{{.Keywords}}{{end}}"/>
+<meta name="description" content="
+{{- with .Description -}}
+	    {{- . -}}
+{{- else -}}
+	    {{- if .IsPage}}
+	    {{- .Summary -}}
+	    {{- else -}}
+	    {{- with .Site.Params.description -}}
+	    {{- . -}}
+	    {{- end -}}
+	    {{- end -}}
+{{- end -}}">
+<meta name="keywords" content="{{if .IsHome}}
+	    {{- .Site.Params.keywords -}}
+{{else}}
+	    {{- .Keywords -}}
+{{end}}"/>
 {{ hugo.Generator }}
 {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
 {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-{{ if .Site.Params.enableGoogleAnalytics }} 
-{{ template "_internal/google_analytics_async.html" . }}
-{{ end }}
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    {{ if .Site.Params.enableGoogleAnalytics }} 
+	{{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
 
-{{ if .Site.Params.insightsAnalytics }}
-{{ partial "insightsanalytics.html" . }}
-{{ end }}
+    {{ if .Site.Params.insightsAnalytics }}
+	{{ partial "insightsanalytics.html" . }}
+    {{ end }}
 {{ else }}
-<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 {{ end }}
 
 <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
