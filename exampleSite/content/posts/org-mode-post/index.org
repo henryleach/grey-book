@@ -56,7 +56,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
     #+begin_quote
     A witty saying proves nothing.
     #+end_quote
-[fn:1] [[https://en.wikipedia.org/wiki/Voltaire][Voltaire]] was a known as a bit of a wit, and should the internet have existed then, he would almost certainly have blogged with Org Mode and this Hugo theme. It's a pity he passed away in 1778 really.
+[fn:1] [[https://en.wikipedia.org/wiki/Voltaire][Voltaire]] was a known as a bit of a wit, and should the internet have existed then, he would almost certainly have blogged with Org Mode and this Hugo theme. It's a pity he passed away in 1778 really.  [[#footnote-reference-1][↩]]
 
 * Tables
 
@@ -184,9 +184,10 @@ Lists of all types seem to be rendered with a bonus =<p>= in them, as shown belo
    :CUSTOM_ID: the-footnotes
    :END:
 
-  From Markdown footnotes are rendered as an ordered[fn:2] list. For Org Mode input it's a series of =<div>=. Like with the lists we just inline the display to compact it a bit, and increase the size of the reference number, as otherwise it's tiny and hard to click. 
+  From Markdown footnotes are rendered as an ordered[fn:2] list. For Org Mode input it's a series of =<div>=. Like with the lists we just inline the display to compact it a bit, and increase the size of the reference number, as otherwise it's tiny and hard to click. The little 'back' arrow does not appear automatically in org-mode footnotes, but they can be added by adding a link with a relref shortcode and the arrow character as follows (but without the space between the first two curly brackets.
+ : [[#footnote-reference-NUMBER][↩]]
   
-[fn:2] This second footnote is only to show what multiple footnotes look like, it's not as snarky as the first one. 
+[fn:2] This second footnote is only to show what multiple footnotes look like, it's not as snarky as the first one.  [[#footnote-reference-2][↩]]
 
 
 ** Link To Headings and other articles
