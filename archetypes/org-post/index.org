@@ -4,8 +4,8 @@
 #+TAGS[]: x y
 #+FEATURED_IMAGE:
 
-#+attr_html: :width 580px
-#+CAPTION: 
+#+attr_html: :width 580px :alt This is the alt text :title My Title
+#+CAPTION: Delete line if no caption required
 [[ image_name.png ] ]
 
 

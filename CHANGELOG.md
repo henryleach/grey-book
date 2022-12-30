@@ -2,6 +2,9 @@
 - Add option to convert images to WebP, currently doesn't appear to be a simple way to do this globally. Only for Hugo extended.
 - Specify the height and width of all images in <img> tag to help prevent big resizes during rendering. 
 
+## 2022.12
+- Added title and alt text placeholders to .org archetype.
+
 ## 2021.10
 - Post pagination hides post names and increases arrow size on mobile.
 - Resized Avatar image, and made storage location in /assers/images folder.
