@@ -2,6 +2,10 @@
 - Add option to convert images to WebP, currently doesn't appear to be a simple way to do this globally. Only for Hugo extended.
 - Specify the height and width of all images in <img> tag to help prevent big resizes during rendering. 
 
+## 2023.01
+- Added Mastodon logo to social media footer options
+- Added rel=me links into the home page header with config variable 'meLinks'
+
 ## 2022.12
 - Added title and alt text placeholders to .org archetype.
 

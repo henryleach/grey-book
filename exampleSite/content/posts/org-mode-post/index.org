@@ -35,6 +35,7 @@ and you're ready to go.
 
 * Images
 
+#+ATTR_HTML: :width 580px :alt View across a grass irish landscape with a lake in the background :title Irish Loch
 [[loch_01.jpg]]
 
 * Paragraph
@@ -164,6 +165,7 @@ Below are a few pointers for using this theme with Org Mode.
 
 Images without captions should be treated the same, but if you add a caption it's rendered as a =<figure>=, and so rendered slightly smaller, as below.
 
+#+ATTR_HTML: :width 580px :alt View across a grass irish landscape with a lake in the background :title Irish Loch
 #+CAPTION:  With a Caption: Photo by [[https://www.henryleach.com][HL]]
 [[loch_01.jpg]]
 

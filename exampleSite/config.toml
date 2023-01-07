@@ -27,11 +27,13 @@ style = "monokai"
 lineNos = false
 
 [social]
+fediverse = "https://fosstodon.org"
 github = "https://www.github.com"
 twitter = "https://www.twitter.com"
 stackoverflow = "https://www.stackoverflow.com"
 facebook = "https://www.facebook.com"
 linkedin = "https://www.linkedin.com"
+
 
 
 [params]
@@ -45,6 +47,11 @@ avatarLink = "https://grey-book-theme-example.onrender.com"
 description = "Example Site of the Grey Book Hugo Theme"
 keywords = "Hugo, theme, exampleSite"
 
+# Puts every entry into an invisible rel="me" link on the home page,
+# for veryfying your identity with other services
+meLinks = [
+	"https://fosstodon.org/@usersname"
+	]
 
 enableRSS = true
 # To enable comments, you may need to set `disqusShortname`
