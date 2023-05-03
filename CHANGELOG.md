@@ -1,6 +1,12 @@
 ## TODO
 - Add option to convert images to WebP, currently doesn't appear to be a simple way to do this globally. Only for Hugo extended.
-- Specify the height and width of all images in <img> tag to help prevent big resizes during rendering. 
+- Specify the height and width of all images in <img> tag to help prevent big resizes during rendering.
+- Dark Mode
+- More semantic HTML, currently there are only random elements
+
+## 2023.05
+- Added underlines to in paragraph links
+- Gave colours more contrast, but not really happy with all choices
 
 ## 2023.01
 - Added Mastodon logo to social media footer options

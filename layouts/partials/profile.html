@@ -1,6 +1,6 @@
 <header class="profile">
     {{- $orig := resources.Get .Site.Params.avatar -}}
-    {{ $image := $orig.Resize "150x" }}
+    {{ $image := $orig.Resize "150x q100" }}
     {{ if .Site.Params.roundAvatar }}
     <style> .profile .avatar { border-radius: 50%; } </style>
     {{ end }}
