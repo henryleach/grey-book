@@ -14,6 +14,8 @@
    width="{{ .width }}"
    height="{{ .height }}"
    fill="{{ .fill }}">
+  <title>LinkedIn</title>
+  <desc>LinkedIn social media site logo</desc>
   <metadata
      id="metadata10">
     <rdf:RDF>

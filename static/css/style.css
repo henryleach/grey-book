@@ -30,7 +30,7 @@ a {
     text-decoration-color: var(--highLightColour1);
     color: var(--textMainColour);
 }
-a:not(p a) {
+a:not(p a, ol a, ul a) {
     /* Remove all link decorations when not in
      a paragraph, e.g. headings, nav etc.*/
     text-decoration: none;
