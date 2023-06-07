@@ -1,8 +1,6 @@
 # Hugo Grey Book Theme
 
-A simple, blog focused theme for the sophisticated reader and blogger with ideas above their station. 
-
-![](images/tn.png)
+A simple, blog focused, theme for the sophisticated reader and blogger with ideas above their station. 
 
 - [Example Site](https://grey-book-theme-example.onrender.com)
 
@@ -15,6 +13,8 @@ Features:
 - A long, warm, rich aftertaste with hints of an autumn bonfire, like a good whisky
 
 ## Installation
+
+You will need to use Hugo extended for this theme, as it converts images that appear in list pages to WebP format.
 
 ### As Git Submodule
 
@@ -36,11 +36,9 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 
 Download the theme as a [zip file](https://github.com/henryleach/grey-book/archive/refs/heads/main.zip) from Github, then unzip it into a folder `themes/grey-book`.
 
-
 ## Getting started
 
 After installing the theme, you need to update the `config.toml` file in your site's root directory. 
-
 
 ### Configuration
 

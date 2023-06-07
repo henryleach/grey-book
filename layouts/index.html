@@ -17,7 +17,7 @@
 	
 	{{ if $origImage }}
 	<a href="{{ .RelPermalink }}">
-	    <img class="summary_img" src="{{ ($origImage.Resize "580x").RelPermalink }}" alt="{{ $title }}">
+	    <img class="summary_img" src="{{ ($origImage.Resize "580x webp q100").RelPermalink }}" alt="{{ $title }}">
 	</a>
 	  {{ end }}
 
