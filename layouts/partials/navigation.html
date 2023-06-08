@@ -10,7 +10,4 @@
 		<a href="{{ $element.path }}">{{ $element.name }}</a>
 	{{ end }}
 
-	{{ if .Site.Params.enableRSS }}
-	  <a class="button" href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{end}}">{{ with .Site.Params.subscribe }}{{ . }}{{ else }}RSS Feed{{ end }}</a>
-	{{ end }}
 </nav>

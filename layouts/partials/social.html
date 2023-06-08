@@ -1,10 +1,20 @@
 <div id="social">
 
+    {{ if .Site.Params.enableRSS }}
+	<a class="symbol" href="{{ with .OutputFormats.Get "RSS"}}{{ .RelPermalink }}{{ end }}" target="_blank">
+	    {{partial "svgs/rss.svg" (dict "fill" "#bbbbbb" "width" 28 "height" 28 )}}</a>
+	{{ end }}
+
 {{ range $key, $val := .Site.Social }}
+    {{if ne $key "_merge" }}
+	{{/* as of v0.112 this extra "_merge"
+	key appears in the map, breaking the below
+	no idea why it's now a thing*/}}
+
     <a class="symbol" href="{{ $val }}" target="_blank">
-        {{ $svg :=  print "svgs/" $key ".svg" }}
-        {{ partial $svg (dict "fill" "#bbbbbb" "width" 28 "height" 28 ) }}
-    </a>
+	{{ $svg :=  print "svgs/" $key ".svg" }}
+	{{ partial $svg (dict "fill" "#bbbbbb" "width" 28 "height" 28 ) }}</a>
+    {{ end }}
 {{ end }}
 
 </div>

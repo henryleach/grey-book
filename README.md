@@ -14,8 +14,6 @@ Features:
 
 ## Installation
 
-You will need to use Hugo extended for this theme, as it converts images that appear in list pages to WebP format.
-
 ### As Git Submodule
 
 1. Inside the folder of your Hugo site run:
