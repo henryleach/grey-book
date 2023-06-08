@@ -1,0 +1,66 @@
+<svg
+   viewBox="0 0 72 72"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="rss.svg"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   width="{{ .width }}"
+   height="{{ .height }}"
+   fill="{{ .fill }}"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title574">RSS Feed</title>
+  <desc
+     id="desc576">RSS Feed Symbol</desc>
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>RSS</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1112"
+     inkscape:window-height="713"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="3.6875"
+     inkscape:cx="32.677966"
+     inkscape:cy="36.474576"
+     inkscape:window-x="240"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="rss"
+     inkscape:showpageshadow="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <g
+     id="rss"
+     inkscape:label="rss">
+    <path
+       id="path2"
+       d="M 6.1523438 0 C 2.8702466 0 5.9211835e-16 2.3628299 0 5.6074219 L 0 65.830078 C 0 69.093426 2.8702466 72 6.1523438 72 L 66.222656 72 C 69.523508 72 72 69.07467 72 65.830078 L 72 5.6074219 C 72.018758 2.3628299 69.524283 -5.9211835e-16 66.242188 0 L 6.1523438 0 z M 5.8300781 5.8300781 C 38.928492 5.8300781 66.169922 33.071508 66.169922 66.169922 L 54.099609 66.169922 C 54.099609 39.688676 32.311323 17.898438 5.8300781 17.898438 L 5.8300781 5.8300781 z M 5.8300781 26.169922 C 27.770819 26.169922 45.828125 44.231695 45.828125 66.169922 L 34.099609 66.169922 C 34.099609 50.660304 21.339695 37.898438 5.8300781 37.898438 L 5.8300781 26.169922 z M 14.103516 49.613281 C 18.664132 49.613281 22.382813 53.332792 22.382812 57.898438 C 22.382812 62.45654 18.649629 66.169922 14.083984 66.169922 C 9.5258811 66.169922 5.8300781 62.464082 5.8300781 57.898438 C 5.8300781 53.332792 9.53787 49.615795 14.103516 49.613281 z "
+       fill="{{.fill}}" />
+  </g>
+</svg>
