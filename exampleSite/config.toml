@@ -35,7 +35,6 @@ facebook = "https://www.facebook.com"
 linkedin = "https://www.linkedin.com"
 
 
-
 [params]
 author = "Author"
 bio = "Hugo Theme Example Site"
@@ -79,3 +78,8 @@ readMore = ""  # Default: Read More
 [[params.links]]
 name = "Theme Source"
 path = "https://github.com/henryleach/grey-book"
+
+[params.fruit]
+red = "Strawberry"
+green = "Apple"
+yellow = "Banana"
