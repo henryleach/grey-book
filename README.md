@@ -91,7 +91,7 @@ enableComments = true
 
 ## Analytics
 
-There are templates to add analytics scripts for Google and/or [Insights](https://getinsights.io).
+There are templates to add analytics scripts for Google and/or [TinyAnalytics](https://tinyanalytics.io).
 
 To avoid these being triggered in testing, they are only rendered if either you have an environment variable called 'HUGO_ENV' set to "production" or in the config file you have the 'env' variable set.
 
@@ -112,13 +112,15 @@ To enable Google analytics, add following to your config file:
 enableGoogleAnalytics = true
 ```
 
-### Insights Analytics
+This is a reminant of the theme it was forked from, and I've never tested it, I assume it works, but best test it yourself.
 
-Set the following in the config file, if omitted or set to `false` it is not rendered.
+### TinyAnalytics
+
+Set the following in the config file, if omitted or set to `false` it is not rendered. The site-id can be found when looking at the tracking code and is the jumble of letters after the last slash: `https://app.tinyanalytics.io/pixel/<this-bit-here>`.
 
 ```
 [params]
-insightsAnalytics = "your-getinsights.io-id"
+tinyAnalytics = "your tiny-analyics-tracking-code"
 ```
 
 ## License
