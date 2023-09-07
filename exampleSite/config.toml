@@ -58,9 +58,9 @@ enableRSS = true
 enableComments = true
 # To enable analytics, you may need to set `googleAnalytics`
 enableGoogleAnalytics = true
-insightsAnalytics = false # normally "your-getinsights.io-id"
+tinyAnalytics = false # The pixel code for your website
 
-# set to "production" when in production use, or use
+# Set to "production" when in production use, or use
 # HUGO_ENV="production" in environment variables.
 env = "test" 
 

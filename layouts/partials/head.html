@@ -27,8 +27,8 @@
 	{{ template "_internal/google_analytics_async.html" . }}
     {{ end }}
 
-    {{ if .Site.Params.insightsAnalytics }}
-	{{ partial "insightsanalytics.html" . }}
+    {{ if .Site.Params.tinyAnalytics }}
+	{{ partial "tinyanalytics.html" . }}
     {{ end }}
 {{ else }}
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
