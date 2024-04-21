@@ -13,4 +13,4 @@
 
 Footnote[fn:1].
 
-[fn:1]: Your text.  [[#footnote-reference-1][↩]]
+[fn:1] Your text.  [[#footnote-reference-1][↩]]

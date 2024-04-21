@@ -4,6 +4,10 @@
 - Dark Mode
 - More semantic HTML, currently there are only random elements
 
+## 2024.04
+- Added Detail/Summary short code, and examples in the org-mode post on how to make it work there.
+- Fixed footer template in org-mode archetype
+
 ## 2023.05
 - Added underlines to in paragraph links
 - Gave colours more contrast, but not really happy with all choices

@@ -148,6 +148,14 @@ $ echo "What do you mean this line of code is excessivly long and doesn't wrap w
   * Milk
   * Cheese
 
+## Summary with Details
+
+Using the shortcode `details` gives you
+
+{{% details "a short summary" false %}}
+And then a longer explanation of how to use it in the [HugoMods Docs](https://hugomods.com/docs/shortcodes/details).
+{{% /details %}}
+
 ## Other Elements — abbr, sub, sup, kbd, mark
 
 <abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.

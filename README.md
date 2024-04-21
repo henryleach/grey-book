@@ -131,3 +131,4 @@ tinyAnalytics = "your tiny-analyics-tracking-code"
 
 Forked from Nodejh's [Mini](https://github.com/nodejh/hugo-theme-mini) theme.
 
+The Summar/Details shortcode is from:  [hugomods](https://github.com/hugomods/shortcodes/blob/main/layouts/shortcodes/details.html).

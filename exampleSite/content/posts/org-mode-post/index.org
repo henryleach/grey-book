@@ -139,20 +139,70 @@ echo "What do you mean this line of code is excessivly long and doesn't wrap wel
       - Milk
       - Cheese
 	
+* Summary with Details
+
+Using the shortcode ~details~ gives you the following, but you have to wrap it in a ~begin_export html~ block and then write HTML for it to work.
+
+#+begin_export html
+{{% details "A short summary" false %}}
+And then a longer explanation of how to use it in the <a href="https://hugomods.com/docs/shortcodes/details">HugoMods Docs</a>.
+{{% /details %}}
+#+end_export
+
+..but there is another way, which seems a little sneaky
+
+#+begin_export html
+<details>
+<summary>Another summary</summary>
+#+end_export
+Where you can write ~org-mode~ syntax /as you want!/ without having to write everything in HTML.
+#+begin_export html
+</details>
+#+end_export
+
+That's by having two ~#+begin_export html~ sections, the first containing the opening ~<detail>~ tag with the summary, and then a later section with the closing tag, and in between just write org-mode, as below:
+
+#+begin_src
+#+begin_export html
+<details>
+   <summary>This is another summary</summary>
+#+end_export
+
+Where you can write ~org-mode~ syntax /as you want!/ without having to write everything in HTML.
+
+#+begin_export html
+</details>
+#+end_export  
+#+end_src
+
 * Other Elements
 
-  GIF is a bitmap image format.
-  
-  H_{2}O
+If you want to use other features from HTML for which there isn't an org-mode equivalent, you can just write the HTML in a ~#+begin_export html~ block, which acts as a work-around. For example the abbreviation expansion as a hover over below:
 
-  X^{n} + Y^{n} = Z^{n}
+#+begin_export html
+<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+#+end_export
 
-  (Acts as if =#+OPTIONS: ^:{}= is set in the file parameters)
+Equations can be done directly from org-mode:
 
-  Press =CTRL+ALT+Delete= to end the session.
+H_{2}O
 
- Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
-  
+X^{n} + Y^{n} = Z^{n}
+
+(Acts as if =#+OPTIONS: ^:{}= is set in the file parameters)
+
+Press =CTRL+ALT+Delete= to end the session.
+
+But again the ~<mark>~ tag requires the HTML export hack, otherwise it just looks like this:
+
+Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+
+and not like:
+
+#+begin_export html
+Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worsma dn other small creatures.
+#+end_export
+ 
 * Differences Between Org Mode and Markdown
 
   Org Mode has different goals to Markdown, Org Mode is more of an interactive document format, than a syntax for marking up text, but it can be used for that as well. 
