@@ -24,7 +24,7 @@
 {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
     {{ if .Site.Params.enableGoogleAnalytics }} 
-	{{ template "_internal/google_analytics_async.html" . }}
+	{{ template "_internal/google_analytics.html" . }}
     {{ end }}
 
     {{ if .Site.Params.tinyAnalytics }}
