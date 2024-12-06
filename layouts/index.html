@@ -3,7 +3,7 @@
 
 <div id="list-page">
     {{ $pages := .Site.RegularPages }}
-    {{ $paginator := .Paginate ($pages) }}
+    {{ $paginator := .Paginate $pages }}
     {{ range $paginator.Pages }}
     {{ $title := .Title }}
     {{ $summary := .Summary }}

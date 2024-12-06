@@ -2,7 +2,6 @@ baseURL = "https://grey-book-theme-example.onrender.com"
 languageCode = "en-us"
 title = "Grey Book"
 theme = "grey-book"
-paginate = 3
 enableRobotsTXT = true
 
 # for exampleSite only, you need to delete the line below
@@ -26,15 +25,8 @@ guessSyntax = true
 style = "monokai"
 lineNos = false
 
-[social]
-fediverse = "https://fosstodon.org"
-github = "https://www.github.com"
-twitter = "https://www.twitter.com"
-stackoverflow = "https://www.stackoverflow.com"
-facebook = "https://www.facebook.com"
-linkedin = "https://www.linkedin.com"
-
-
+[pagination]
+pagerSize = 3
 
 [params]
 author = "Author"
@@ -75,6 +67,15 @@ copyright = ""  # Default: © Copyright 2021 ❤ author
 title404 = ""  # Default: 404 - Page Not Found
 subtitle404 = "" # Default: The content you're looking for doesn't seem to exist.
 readMore = ""  # Default: Read More
+
+[params.social]
+fediverse = "https://fosstodon.org"
+github = "https://www.github.com"
+twitter = "https://www.twitter.com"
+stackoverflow = "https://www.stackoverflow.com"
+facebook = "https://www.facebook.com"
+linkedin = "https://www.linkedin.com"
+
 
 [[params.links]]
 name = "Theme Source"
