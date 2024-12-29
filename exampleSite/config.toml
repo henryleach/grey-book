@@ -38,6 +38,7 @@ avatarLink = "https://grey-book-theme-example.onrender.com"
 # Site Description, used in HTML head
 description = "Example Site of the Grey Book Hugo Theme"
 keywords = "Hugo, theme, exampleSite"
+fediverseCreator = false # Add "@user@example.com" to add a creator tag for Mastodon
 
 # Puts every entry into an invisible rel="me" link on the home page,
 # for veryfying your identity with other services

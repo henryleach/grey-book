@@ -34,14 +34,19 @@
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 {{ end }}
 
+{{ if .Site.Params.fediverseCreator }}
+    <meta name="fediverse:creator" content="{{ $.Site.Params.fediversecreator }}" />
+{{ end }}
+
 <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
 <link rel="shortcut icon" href="{{ (resources.Get $.Site.Params.favicon).RelPermalink }}" gtype="image/jpg" />
 
 {{ if .IsHome }}
     {{ range .Site.Params.meLinks }}
-       <link rel="me" href={{ . }}>
-   {{ end }}
+	<link rel="me" href={{ . }}>
+    {{ end }}
 {{ end }}
+
 
 {{ if .OutputFormats.Get "RSS" }}
   {{ with .OutputFormats.Get "RSS" }}
