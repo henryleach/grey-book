@@ -22,7 +22,7 @@ Features:
 $ git submodule add https://github.com/henryleach/grey-book.git themes/grey-book
 ```
 
-2. Add the theme's directory to your `config.toml`:
+2. Add the theme's directory to your `hugo.toml`:
 
 ```
 theme = "grey-book"
@@ -40,7 +40,7 @@ After installing the theme, you need to update the `config.toml` file in your si
 
 ### Configuration
 
-Inside the [`exampleSite`](https://github.com/henryleach/grey-book/tree/main/exampleSite) folder of this theme is a [`config.toml`](https://github.com/henryleach/grey-book/blob/master/exampleSite/config.toml) example config file. Copy it to the root directory of your site and change the options as you please.
+Inside the [`exampleSite`](https://github.com/henryleach/grey-book/tree/main/exampleSite) folder of this theme is a [`config.toml`](https://github.com/henryleach/grey-book/blob/master/exampleSite/hugo.toml) example config file. Copy it to the root directory of your site and change the options as you please.
 
 > ⚠ You will probably need to delete the line: `themesDir = "../../"` which is needed to make the example theme site work.
 
@@ -77,7 +77,7 @@ $ hugo new --kind org-post /posts/my-new-post-name
 
 ## Analytics
 
-There are templates to add analytics scripts for Google and/or [TinyAnalytics](https://tinyanalytics.io).
+There are templates to add analytics scripts for [TinyAnalytics](https://tinyanalytics.io).
 
 To avoid these being triggered in testing, they are only rendered if either you have an environment variable called 'HUGO_ENV' set to "production" or in the config file you have the 'env' variable set.
 
@@ -94,6 +94,30 @@ Set the following in the config file, if omitted or set to `false` it is not ren
 [params]
 tinyAnalytics = "your tiny-analyics-tracking-code"
 ```
+
+## Fediverse Integration
+
+This template includes meta details for richer integration into Fediverse applications like Mastodon.
+
+To check your site's metadata you can use [Robb Knight's Lens tool](https://lens.rknight.me).
+
+### Me Links
+
+You can verify your Mastodon profile by adding one or more (you may have multiple profiles) me links in a list:
+
+```toml
+meLinks = ["https://example.com/@user"]
+```
+
+### Fediverse Creator
+
+Compatible with Mastodon v4.3+. Make sure to add your domain under *Settings >
+ Profile > Verification - Author attribution*. Then add the line below to your site's `hugo.toml` file.
+ 
+```toml
+fediverseCreator = "@user@example.com"
+```
+
 
 ## License
 
