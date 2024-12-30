@@ -3,8 +3,8 @@
 {{ $desc := .Site.Params.description }}
 {{ if .Description }}
     {{ $desc = .Description }}
-    {{ else if .IsPage }}
-	{{ $desc = .Summary }}
+{{ else if .IsPage }}
+    {{ $desc = .Summary }}
 {{ end }}
 
 {{/* Use a default, or if it's a page try a featured image */}}
@@ -21,7 +21,7 @@
 <meta name="description" content="{{ $desc }}">
 <meta name="keywords" content="{{if .IsHome}}
 	    {{- .Site.Params.keywords -}}
-            {{else}}
+{{else}}
 	    {{- .Keywords -}}
 {{end}}">
 <!-- Open Graph metadata -->
@@ -29,13 +29,13 @@
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:type" content={{ if .IsHome }}
       "website"
-      {{ else }}
+{{ else }}
       "article"
 {{ end }}>
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ .Page.Permalink }}">
 {{ if $ogImage }}
-<meta property="og:image" content="{{ $ogImage }}">
+    <meta property="og:image" content="{{ $ogImage }}">
 {{ end }}
 {{ hugo.Generator }}
 {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
@@ -52,9 +52,12 @@
 {{ if .Site.Params.fediverseCreator }}
     <meta name="fediverse:creator" content="{{ $.Site.Params.fediversecreator }}" />
 {{ end }}
-
+<!-- Things for Apple Devices -->
+<meta name="theme-color" content="#f9fafb">
+<link rel="apple-touch-icon" href="{{ (resources.Get $.Site.Params.favicon).RelPermalink }}">
+<!-- Style and links -->
 <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
-<link rel="shortcut icon" href="{{ (resources.Get $.Site.Params.favicon).RelPermalink }}" gtype="image/jpg" />
+<link rel="icon" href="{{ (resources.Get $.Site.Params.favicon).RelPermalink }}" type="image/x-icon">
 
 {{ if .IsHome }}
     {{ range .Site.Params.meLinks }}
