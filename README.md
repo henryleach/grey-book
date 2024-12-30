@@ -95,9 +95,9 @@ Set the following in the config file, if omitted or set to `false` it is not ren
 tinyAnalytics = "your tiny-analyics-tracking-code"
 ```
 
-## Fediverse Integration
+## Fediverse/OpenGraph Integration
 
-This template includes meta details for richer integration into Fediverse applications like Mastodon.
+This template includes meta details for richer integration into Fediverse applications like Mastodon and generate [preview cards](https://box464.com/posts/mastodon-preview-cards).
 
 To check your site's metadata you can use [Robb Knight's Lens tool](https://lens.rknight.me).
 
@@ -117,7 +117,13 @@ Compatible with Mastodon v4.3+. Make sure to add your domain under *Settings >
 ```toml
 fediverseCreator = "@user@example.com"
 ```
+### Preview Image
 
+If your page has a featured image, this will be used to create a OpenGraph image that is used to generate. If there is no image, or it's the homepage, it will fall back to what is defined under `openGraphImage`. It's best to include this, otherwise some services will keep trying to generate one
+
+```toml
+openGraphImage = "images/og_image.png"
+```
 
 ## License
 
