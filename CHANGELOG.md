@@ -1,6 +1,6 @@
 ## TODO
 - Add option to convert images to WebP, currently doesn't appear to be a simple way to do this globally. Only for Hugo extended.
-- Specify the height and width of all images in <img> tag to help prevent big resizes during rendering.
+- Specify the height and width of all images in `<img>` tag to help prevent big resizes during rendering.
 - Dark Mode
 - More semantic HTML, currently there are only random elements
 
@@ -9,7 +9,7 @@
 - Removed Google Analytics option, more maintenance work for something I don't use
 - Removed Disqus based comments
 - Moved config.toml to hugo.toml
-
+- added OpenGraph metadata to head
 
 ## 2024.04
 - Added Detail/Summary short code, and examples in the org-mode post on how to make it work there.

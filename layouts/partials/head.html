@@ -1,34 +1,41 @@
 <!-- -*- engine:go -*- -->
+{{ $desc := .Site.Params.description }}
+{{ if .Description }}
+    {{ $desc = .Description }}
+    {{ else if .IsPage }}
+	{{ $desc = .Summary }}
+{{ end }}
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="
-	    {{- with .Description -}}
-	    {{- . -}}
-	    {{- else -}}
-	    {{- if .IsPage}}
-	    {{- .Summary -}}
-	    {{- else -}}
-	    {{- with .Site.Params.description -}}
-	    {{- . -}}
-	    {{- end -}}
-	    {{- end -}}
-	    {{- end -}}">
+<meta name="description" content="{{ $desc }}">
 <meta name="keywords" content="{{if .IsHome}}
 	    {{- .Site.Params.keywords -}}
-{{else}}
+            {{else}}
 	    {{- .Keywords -}}
-{{end}}"/>
+{{end}}">
+<!-- Open Graph metadata -->
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:type" content={{ if .IsHome }}
+      "website"
+      {{ else }}
+      "article"
+{{ end }}>
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Page.Permalink }}">
+
 {{ hugo.Generator }}
 {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
 {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
 
     {{ if .Site.Params.tinyAnalytics }}
 	{{ partial "tinyanalytics.html" . }}
     {{ end }}
 {{ else }}
-    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
 {{ end }}
 
 {{ if .Site.Params.fediverseCreator }}
