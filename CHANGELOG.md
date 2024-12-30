@@ -4,6 +4,13 @@
 - Dark Mode
 - More semantic HTML, currently there are only random elements
 
+## 2024.12
+- Added FediverseCreator meta tag
+- Removed Google Analytics option, more maintenance work for something I don't use
+- Removed Disqus based comments
+- Moved config.toml to hugo.toml
+
+
 ## 2024.04
 - Added Detail/Summary short code, and examples in the org-mode post on how to make it work there.
 - Fixed footer template in org-mode archetype

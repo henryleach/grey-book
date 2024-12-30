@@ -66,28 +66,14 @@ If you are using pageBundles and you don't specify an image, one from the pageBu
 
 Grey Book has two pageBundle archetypes, depending if you want to create a Markdown or Org Mode based post. Either:
 
-```bash
+```sh
 $ hugo new --kind md-post /posts/my-new-post-name
 ```
 or for a Org Mode based post:
 
-```bash
+```sh
 $ hugo new --kind org-post /posts/my-new-post-name
 ```
-
-### Add Comments
-
-To enable comments, add following to your config file:
-
-- Disqus shortname: `disqusShortname = "your-disqus-shortname"`
-- Enable Comments:
-
-```
-[params]
-enableComments = true
- ```
- 
-(This should work as it's based on Hugo built ins, but is untested as I don't use comments.)
 
 ## Analytics
 
@@ -99,20 +85,6 @@ To avoid these being triggered in testing, they are only rendered if either you 
 [params]
 env = "production"
 ```
-
-### Google Analytics
-
-To enable Google analytics, add following to your config file:
-
-- Google Analytics ID: `googleAnalytics = "your-google-analytics-id"`
-- Enable Google Analytics:
-
-```
-[params]
-enableGoogleAnalytics = true
-```
-
-This is a reminant of the theme it was forked from, and I've never tested it, I assume it works, but best test it yourself.
 
 ### TinyAnalytics
 
@@ -131,4 +103,4 @@ tinyAnalytics = "your tiny-analyics-tracking-code"
 
 Forked from Nodejh's [Mini](https://github.com/nodejh/hugo-theme-mini) theme.
 
-The Summar/Details shortcode is from:  [hugomods](https://github.com/hugomods/shortcodes/blob/main/layouts/shortcodes/details.html).
+The Summary/Details shortcode is from:  [hugomods](https://github.com/hugomods/shortcodes/blob/main/layouts/shortcodes/details.html).

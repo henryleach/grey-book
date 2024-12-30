@@ -10,9 +10,6 @@ themesDir = "../../"
 
 hasCJKLanguage = false
 
-googleAnalytics = "your-google-analytics-id"
-disqusShortname = "your-disqus-shortname"
-
 [markup.goldmark.renderer]
 # Enables inline rendering of HTML tags in Markdown posts.
 unsafe = true
@@ -47,10 +44,6 @@ meLinks = [
 	]
 
 enableRSS = true
-# To enable comments, you may need to set `disqusShortname`
-enableComments = true
-# To enable analytics, you may need to set `googleAnalytics`
-enableGoogleAnalytics = true
 tinyAnalytics = false # The pixel code for your website
 
 # Set to "production" when in production use, or use

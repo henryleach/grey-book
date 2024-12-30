@@ -23,9 +23,6 @@
 {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
 {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
     <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-    {{ if .Site.Params.enableGoogleAnalytics }} 
-	{{ template "_internal/google_analytics.html" . }}
-    {{ end }}
 
     {{ if .Site.Params.tinyAnalytics }}
 	{{ partial "tinyanalytics.html" . }}
