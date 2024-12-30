@@ -1,9 +1,18 @@
 <!-- -*- engine:go -*- -->
+{{/* Set various longer variables */}}
 {{ $desc := .Site.Params.description }}
 {{ if .Description }}
     {{ $desc = .Description }}
     {{ else if .IsPage }}
 	{{ $desc = .Summary }}
+{{ end }}
+
+{{/* Use a default, or if it's a page try a featured image */}}
+{{ $ogImage := partial "func/GetFeaturedImage.html" . }}
+{{ if not $ogImage }}
+    {{ $ogImage = (resources.Get $.Site.Params.openGraphImage).Permalink }}
+{{ else }}
+    {{ $ogImage = ($ogImage).Permalink }}
 {{ end }}
 
 <meta charset="utf-8">
@@ -25,7 +34,9 @@
 {{ end }}>
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ .Page.Permalink }}">
-
+{{ if $ogImage }}
+<meta property="og:image" content="{{ $ogImage }}">
+{{ end }}
 {{ hugo.Generator }}
 {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
 {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
