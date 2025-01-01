@@ -17,10 +17,11 @@
 	
 	{{ if $origImage }}
 	<a href="{{ .RelPermalink }}">
-	    <img class="summary_img" src="{{ ($origImage.Resize "580x q100").RelPermalink }}" alt="{{ $title }}">
+	    {{ with $origImage.Resize "580x webp" }}
+    	    <img class="summary_img" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}">
 	</a>
-	  {{ end }}
-
+	    {{ end }}
+	{{ end }}
           <div class="summary">{{ $summary | plainify | htmlUnescape }}</div>
 
         </section>

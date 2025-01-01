@@ -1,8 +1,12 @@
 ## TODO
-- Add option to convert images to WebP, currently doesn't appear to be a simple way to do this globally. Only for Hugo extended.
-- Specify the height and width of all images in `<img>` tag to help prevent big resizes during rendering.
-- Dark Mode
-- More semantic HTML, currently there are only random elements
+- More semantic HTML & accessability, currently there are only random elements
+- Make Org-Mode images also render as WebP - for some reason only Markdown pages are done so.
+
+## 2025.01
+- Dark Mode, selected automatically based on system/browser
+- Fixed social SVGs
+- WebP image rending on index page and markdown pages. Not clear how to get the render hook working for pages created from Org-Mode.
+- Give Index page images height and width info to stop shifting on slow connections.
 
 ## 2024.12
 - Added FediverseCreator meta tag

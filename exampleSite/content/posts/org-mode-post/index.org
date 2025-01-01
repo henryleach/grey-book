@@ -35,7 +35,7 @@ and you're ready to go.
 
 * Images
 
-#+ATTR_HTML: :width 580px :alt View across a grass irish landscape with a lake in the background :title Irish Loch
+#+ATTR_HTML: :alt View across a grass irish landscape with a lake in the background :title Irish Loch
 [[loch_01.jpg]]
 
 * Paragraph

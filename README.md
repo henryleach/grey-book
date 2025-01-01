@@ -8,9 +8,12 @@ Features:
 
 - Archive
 - Tags
-- Org Mode friendly
+- Emacs Org Mode friendly
 - Featured Images in post summary
+- Light & Dark modes
 - A long, warm, rich aftertaste with hints of an autumn bonfire, like a good whisky
+
+The Light/Dark themes are automatic and will be selected on the basis of the user's system and browser settings, there is no manual selection option. All images will be converted to WebP (except for org-mode posts, see changelog).
 
 ## Installation
 
