@@ -1,18 +1,18 @@
 :root {
-    --bgColour: #f9fafb;
-    --bgContrastColour: #f2f2f2;
+    --bgColour: light-dark(#f9fafb, #404040);
+    --bgContrastColour: light-dark(#f2f2f2,#757575);
     
-    --textMainColour: #404040;
-    --textLightColour: #757575;
+    --textMainColour: light-dark(#404040, #f9fafb);
+    --textLightColour: light-dark(#757575, #f2f2f2);
 
     --baseAccentColour: #004d87;
     --highLightColour1: #5badf0;
     --highLightColour2: #ff8263;
     --highLightColour3: #00bea2;
-    --lowLightColour1: #3b4856;
-    --lowLightColour2: #1a534e;
 
     --listColumnWidth: 580px;
+
+    color-scheme: light dark;
 }
 
 body {
@@ -56,7 +56,7 @@ blockquote {
     padding-left: 1em;
     margin-left: 0px;
     border-left: 3px solid var(--highLightColour1);
-    color: var(--lowLightColour1);
+    color: var(--textLightColour);
 }
 
 hr {
@@ -97,7 +97,7 @@ thead th, th {
     font-size: 13px;
     font-weight: bold;
     color: var(--mainTextColour);
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--bgContrastColour); /* rgba(255, 255, 255, 0.8); */
     cursor: default;
     white-space: nowrap;
     border: 1px solid var(--textLightColour);
@@ -107,9 +107,6 @@ tr>td {
     border: 1px solid var(--textLightColour);
 }
 
-tr:nth-child(even)>td {
-    background: rgba(255, 255, 255, 0.4);
-}
 
 h1, h2, h3 {
     font-weight: 400;
@@ -303,8 +300,9 @@ nav.navigation a.button {
     cursor: pointer;
 }
 
-#social a {
+a.social {
     margin: 0 4px;
+    color: var(--textLightColour);
 }
 
 /* main content */

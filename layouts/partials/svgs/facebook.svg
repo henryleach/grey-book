@@ -1,18 +1,45 @@
 <svg
-    fill="{{ .fill }}"
-    width="{{ .width }}"
-    height="{{ .height }}"
-    viewBox="0 0 72 72"
-    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Facebook</title>
-    <desc>Facebook Logo</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Social-Icons---Rounded-Black" transform="translate(-152.000000, -43.000000)">
-            <g id="Facebook" transform="translate(152.000000, 43.000000)">
-                <rect id="Rounded" fill="{{ .fill }}" x="0" y="0" width="72" height="72" rx="8"></rect>
-                <path d="M60.4641463,13.4173171 L60.4641463,22.7278049 L54.9382927,22.7421951 C50.6068293,22.7421951 49.7721951,24.8 49.7721951,27.807561 L49.7721951,34.4702439 L60.09,34.4702439 L58.7517073,44.8887805 L49.7721951,44.8887805 L49.7721951,72 L39.0097317,72 L39.0097317,44.8887805 L30,44.8887805 L30,34.4702439 L39.0097317,34.4702439 L39.0097317,26.7858537 C39.0097317,17.8639024 44.4478049,13 52.42,13 C56.2204634,13 59.5,13.2878049 60.4641463,13.4173171 Z" fill="#FFFFFF"></path>
-            </g>
-        </g>
-    </g>
+   width="{{ .width }}"
+   height="{{ .height }}"
+   viewBox="0 0 72 72"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="facebook.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="5.0381358"
+     inkscape:cx="36.02523"
+     inkscape:cy="36.02523"
+     inkscape:window-width="1366"
+     inkscape:window-height="717"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Facebook" />
+  <title
+     id="title1">Facebook</title>
+  <desc
+     id="desc1">Facebook Logo</desc>
+  <defs
+     id="defs1" />
+  <g
+     id="Facebook"
+     style="fill-rule:evenodd;stroke:none;stroke-width:1">
+    <path
+       id="Rounded"
+       d="M 8 0 C 3.5680044 0 4.9515897e-17 3.5680044 0 8 L 0 64 C 0 68.431996 3.5680044 72 8 72 L 39.009766 72 L 39.009766 44.888672 L 30 44.888672 L 30 34.470703 L 39.009766 34.470703 L 39.009766 26.785156 C 39.009766 17.863213 44.447735 13 52.419922 13 C 56.220381 13 59.500699 13.288457 60.464844 13.417969 L 60.464844 22.728516 L 54.9375 22.742188 C 50.60604 22.742188 49.771484 24.799083 49.771484 27.806641 L 49.771484 34.470703 L 60.089844 34.470703 L 58.751953 44.888672 L 49.771484 44.888672 L 49.771484 72 L 64 72 C 68.431996 72 72 68.431996 72 64 L 72 8 C 72 3.5680044 68.431996 4.9515897e-17 64 0 L 8 0 z "
+       fill="{{ .fill }}" />
+  </g>
 </svg>

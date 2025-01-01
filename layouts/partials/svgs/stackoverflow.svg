@@ -1,18 +1,57 @@
 <svg
-    fill="{{ .fill }}"
-    width="{{ .width }}"
-    height="{{ .height }}"
-    viewBox="0 0 72 72"
-    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Stack Overflow</title>
-    <desc>Stack Overflow Logo</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Social-Icons---Rounded-Black" transform="translate(-488.000000, -1163.000000)">
-            <g id="stackoverflow" transform="translate(488.000000, 1163.000000)">
-                <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" fill="{{ .fill }}"></path>
-                <path d="M42.0860128,53.5922927 L22.9745951,53.6011499 L22.9729497,49.5538824 L42.0835447,49.5440929 L42.0860128,53.5922927 L42.0860128,53.5922927 Z M55,30.6708298 L51.7306912,12 L47.7087256,12.6920259 L50.9775643,31.3628557 L55,30.6708298 L55,30.6708298 Z M42.5455518,44.3547147 L23.5156994,42.616026 L23.1410164,46.6470941 L42.1712214,48.3841513 L42.5455518,44.3547147 L42.5455518,44.3547147 Z M43.8009984,39.0731519 L25.3459811,34.1539179 L24.285633,38.0621508 L42.7419431,42.9819676 L43.8009984,39.0731519 L43.8009984,39.0731519 Z M46.2103463,34.4436411 L29.7494464,24.8164635 L27.6748215,28.3015328 L44.1365441,37.9292931 L46.2103463,34.4436411 L46.2103463,34.4436411 Z M50.2466504,31.6088756 L46.8745036,33.8883189 L36.106599,18.2318456 L39.4792159,15.9517031 L50.2466504,31.6088756 Z M45.3315807,40.2784283 L48.5799693,40.2784283 L48.5799693,60 L17,60 L17,40.2784283 L20.2648427,40.2784283 L20.2648427,56.8243495 L45.3315807,56.8243495 L45.3315807,40.2784283 Z" fill="#FFFFFF"></path>
-            </g>
-        </g>
+   fill="{{ .fill }}"
+   width="{{ .width }}"
+   height="{{ .height }}"
+   viewBox="0 0 72 72"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="stackoverflow.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="7.125"
+     inkscape:cx="36"
+     inkscape:cy="36"
+     inkscape:window-width="1366"
+     inkscape:window-height="717"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="stackoverflow" />
+  <title
+     id="title1">Stack Overflow</title>
+  <desc
+     id="desc1">Stack Overflow Logo</desc>
+  <defs
+     id="defs1" />
+  <g
+     id="Page-1"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd">
+    <g
+       id="Social-Icons---Rounded-Black"
+       transform="translate(-488.000000, -1163.000000)">
+      <g
+         id="stackoverflow"
+         transform="translate(488.000000, 1163.000000)">
+        <path
+           id="Rounded"
+           d="M 8 0 C 3.5817264 8.1162369e-16 0 3.5817264 0 8 L 0 64 C 5.4108246e-16 68.418274 3.5817264 72 8 72 L 64 72 C 68.418274 72 72 68.418274 72 64 L 72 8 C 72 3.5817264 68.418274 -1.1842367e-15 64 0 L 8 0 z M 51.730469 12 L 55 30.669922 L 50.978516 31.363281 L 47.708984 12.691406 L 51.730469 12 z M 39.478516 15.951172 L 50.246094 31.609375 L 46.875 33.888672 L 36.107422 18.232422 L 39.478516 15.951172 z M 29.75 24.816406 L 46.210938 34.443359 L 44.136719 37.929688 L 27.675781 28.300781 L 29.75 24.816406 z M 25.345703 34.154297 L 43.800781 39.072266 L 42.742188 42.982422 L 24.285156 38.0625 L 25.345703 34.154297 z M 17 40.279297 L 20.265625 40.279297 L 20.265625 56.824219 L 45.332031 56.824219 L 45.332031 40.279297 L 48.580078 40.279297 L 48.580078 60 L 17 60 L 17 40.279297 z M 23.515625 42.615234 L 42.544922 44.355469 L 42.171875 48.384766 L 23.140625 46.646484 L 23.515625 42.615234 z M 42.083984 49.544922 L 42.085938 53.591797 L 22.974609 53.601562 L 22.972656 49.554688 L 42.083984 49.544922 z "
+           fill="{{ .fill }}" />
+      </g>
     </g>
+  </g>
 </svg>

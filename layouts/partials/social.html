@@ -1,15 +1,13 @@
 <div id="social">
-
     {{ if .Site.Params.enableRSS }}
-	<a class="symbol" href="{{ with .OutputFormats.Get "RSS"}}{{ .RelPermalink }}{{ end }}" target="_blank">
-	    {{partial "svgs/rss.svg" (dict "fill" "#bbbbbb" "width" 28 "height" 28 )}}</a>
+	<a class="social" href="{{ with .OutputFormats.Get "RSS"}}{{ .RelPermalink }}{{ end }}" target="_blank">
+	    {{partial "svgs/rss.svg" (dict "fill" "currentColor" "width" 28 "height" 28 )}}</a>
 	{{ end }}
 
 {{ range $key, $val := .Site.Params.social }}
-
-    <a class="symbol" href="{{ $val }}" target="_blank">
+    <a class="social" href="{{ $val }}" target="_blank">
 	{{ $svg :=  print "svgs/" $key ".svg" }}
-	{{ partial $svg (dict "fill" "#bbbbbb" "width" 28 "height" 28 ) }}</a>
+	{{ partial $svg (dict "fill" "currentColor" "width" 28 "height" 28 ) }}</a>
 {{ end }}
 
 </div>
