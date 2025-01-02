@@ -57,7 +57,7 @@
 <link rel="apple-touch-icon" href="{{ (resources.Get $.Site.Params.favicon).RelPermalink }}">
 <!-- Style and links -->
 <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
-<link rel="icon" href="{{ (resources.Get $.Site.Params.favicon).RelPermalink }}" type="image/x-icon">
+<link rel="icon" href="{{ (resources.Get $.Site.Params.favicon).RelPermalink }}">
 
 {{ if .IsHome }}
     {{ range .Site.Params.meLinks }}
