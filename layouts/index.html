@@ -4,7 +4,7 @@
 <div id="list-page">
     {{ $pages := .Site.RegularPages }}
     {{ $paginator := .Paginate $pages }}
-    {{ range $paginator.Pages }}
+    {{ range $index, $value := $paginator.Pages }}
     {{ $title := .Title }}
     {{ $summary := .Summary }}
     {{ $date := dateFormat "Jan 2, 2006" .Date }}
@@ -18,7 +18,13 @@
 	{{ if $origImage }}
 	<a href="{{ .RelPermalink }}">
 	    {{ with $origImage.Resize "580x webp" }}
-    	    <img class="summary_img" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}">
+    	    <img class="summary_img"
+		 src="{{ .RelPermalink }}"
+		 width="{{ .Width }}"
+		 height="{{ .Height }}"
+		 alt="{{ $title }}"
+	    	 {{- if $index -}}loading="lazy"{{- end -}}
+	    >
 	</a>
 	    {{ end }}
 	{{ end }}
