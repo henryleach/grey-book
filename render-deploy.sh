@@ -23,5 +23,5 @@ fi
 mkdir grey-book;
 mv * grey-book/.
 $XDG_CACHE_HOME/hugo version # Output the NEW version
-$XDG_CACHE_HOME/hugo --gc --minify hugo -s grey-book/exampleSite --gc --minify
+$XDG_CACHE_HOME/hugo -s grey-book/exampleSite --gc --minify
 
