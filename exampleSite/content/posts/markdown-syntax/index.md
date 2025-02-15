@@ -12,8 +12,6 @@ categories = [
     "themes",
     "syntax",
 ]
-series = ["Themes Guide"]
-aliases = ["migrate-from-jekyl"]
 keywords = ["Markdown", "Example"]
 +++
 
@@ -25,12 +23,12 @@ This article offers a sample of basic [Markdown syntax](https://en.wikipedia.org
 
 The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
 
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
 
 ## Images
 

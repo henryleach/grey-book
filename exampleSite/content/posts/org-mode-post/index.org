@@ -21,17 +21,17 @@ and you're ready to go.
 * Headings
   The following HTML =<h1>= - =h6= elements represents six levels of section headings. =<h1>= is the highest section level while =<h6>= is the lowest.
 
-* H1
+* Heading 1
 
-** H2
+** Heading 2
 
-*** H3
+*** Heading 3
 
-**** H4
+**** Heading 4
 
-***** H5
+***** Heading 5
 
-****** H6
+****** Heading 6
 
 * Images
 
@@ -244,7 +244,7 @@ Lists of all types seem to be rendered with a bonus =<p>= in them, as shown belo
 
 ** Link To Headings and other articles
 
-To link to another page, use the Hugo short code for [[https://gohugo.io/content-management/cross-references/][Links and Cross References]] within the usual
+To link to another page, use the Hugo short code for [[https://gohugo.io/content-management/cross-references/][Links and Cross References]] within the usual double square bracket Org Mode syntax.
    
    This is a bit of a pain. The usual Org Mode syntax of something like =[[*Headings]]= to jump back up to the Images heading doesn't work. All the headings are given ids in the format "headline-xx", which you can then use in the usual link with as =[[#headline-XX] [text]]=, but that requires rendering the page at least once and then not adding headlines in between, not great.
 

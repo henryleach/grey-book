@@ -2,6 +2,9 @@
 - More semantic HTML & accessability, currently there are only random elements
 - Make Org-Mode images also render as WebP - for some reason only Markdown pages are done so.
 
+## 2025.02
+- Removed pixel based font sizes; let default size be decided by browser and user.
+
 ## 2025.01
 - Dark Mode, selected automatically based on system/browser
 - Fixed social SVGs
