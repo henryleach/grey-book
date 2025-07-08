@@ -46,6 +46,7 @@ meLinks = [
 
 enableRSS = true
 tinyAnalytics = false # The pixel code for your website
+insightAnalytics = false # normally "your-getinsights.io-id"
 
 # Set to "production" when in production use, or use
 # HUGO_ENV="production" in environment variables.
