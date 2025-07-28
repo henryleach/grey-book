@@ -1,6 +1,6 @@
 #!/bin/sh
 
-HUGO_VERSION="0.147.0"
+HUGO_VERSION="0.147.9"
 
 TAR_NAME="hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz"
 
