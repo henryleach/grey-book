@@ -2,6 +2,14 @@
 - More semantic HTML & accessability, currently there are only random elements
 - Make Org-Mode images also render as WebP - for some reason only Markdown pages are done so.
 
+## 2025.07
+- Updated theme to match Hugo v0.146+ new theme [layout structure](https://gohugo.io/templates/new-templatesystem-overview/#example-folder-structure).
+- Added generic git-scm icon as an alternative to Github
+- Updated the Render deploy script to be Hugo version 0.147
+
+## 2025.06
+- Added back insights tracking, as TinyAnalyics appears to have done AWOL
+
 ## 2025.02
 - Removed pixel based font sizes; let default size be decided by browser and user.
 

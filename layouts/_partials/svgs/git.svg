@@ -1,0 +1,69 @@
+<svg
+   fill="{{ .fill }}"
+   width="{{ .width }}"
+   height="{{ .height }}"
+   viewBox="0 0 72 72"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="git.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="4.5739117"
+     inkscape:cx="10.166353"
+     inkscape:cy="43.507618"
+     inkscape:window-width="1366"
+     inkscape:window-height="717"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Page-1" />
+  <title
+     id="title1">git-scm</title>
+  <desc
+     id="desc1">git-scm Logo</desc>
+  <defs
+     id="defs1">
+    <clipPath
+       id="a">
+      <path
+         d="M 0,0.113 H 91.887 V 92 H 0 Z m 0,0"
+         id="path1" />
+    </clipPath>
+  </defs>
+  <g
+     id="Page-1"
+     stroke="none"
+     stroke-width="1"
+     fill-rule="evenodd"
+     fill="none">
+    <path
+       id="Rounded"
+       d="M 272 939 C 267.58172 939 264 942.58172 264 947 L 264 1003 C 264 1007.4183 267.58172 1011 272 1011 L 328 1011 C 332.41828 1011 336 1007.4183 336 1003 L 336 947 C 336 942.58172 332.41828 939 328 939 L 272 939 z M 299.94336 946.31836 A 3.6914107 3.6914107 0 0 1 302.55469 947.40039 L 327.60156 972.44531 A 3.6989022 3.6989022 0 0 1 327.60156 977.67188 L 302.67188 1002.6016 A 3.6957808 3.6957808 0 0 1 297.44727 1002.6016 L 272.40039 977.55469 A 3.6945322 3.6945322 0 0 1 272.40039 972.32812 L 289.57422 955.1582 L 296.07812 961.66211 A 4.4006011 4.4006011 0 0 0 297.02344 966.46875 A 4.3706353 4.3706353 0 0 0 298.46484 967.42773 L 298.46484 983.17578 A 4.3912368 4.3912368 0 0 0 297.02344 984.13672 A 4.3949825 4.3949825 0 0 0 297.02344 990.35352 A 4.3949825 4.3949825 0 0 0 303.24023 990.35352 A 4.3949825 4.3949825 0 0 0 302.07812 983.30469 L 302.07812 967.69922 L 308.00977 973.62891 A 4.3937339 4.3937339 0 0 0 308.96484 978.41016 A 4.398104 4.398104 0 0 0 315.18359 978.41016 A 4.3949825 4.3949825 0 0 0 315.18359 972.19531 A 4.3862425 4.3862425 0 0 0 310.64062 971.15039 L 304.2832 964.79297 A 4.3968554 4.3968554 0 0 0 303.23828 960.25 A 4.3887396 4.3887396 0 0 0 298.72461 959.19922 L 292.12891 952.60352 L 297.33008 947.40039 A 3.6914107 3.6914107 0 0 1 299.94336 946.31836 z "
+       transform="translate(-264,-939)"
+       fill="{{ .fill }}" />
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>git-scm</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

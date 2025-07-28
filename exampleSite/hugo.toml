@@ -67,6 +67,7 @@ readMore = ""  # Default: Read More
 [params.social]
 fediverse = "https://fosstodon.org"
 github = "https://www.github.com"
+git = "https://codeberg.org"  # for any VCS that's not github
 twitter = "https://www.twitter.com"
 stackoverflow = "https://www.stackoverflow.com"
 facebook = "https://www.facebook.com"
