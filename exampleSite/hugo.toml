@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Grey Book"
 theme = "grey-book"
 enableRobotsTXT = true
+enableEmoji = true
 
 # for exampleSite only, you need to delete the line below
 # when using as the config file for a real site.

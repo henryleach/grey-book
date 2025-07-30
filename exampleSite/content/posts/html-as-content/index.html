@@ -1,0 +1,14 @@
++++
+title = "HTML As Content"
+date = 2025-07-28
+tags = ["html"]
++++
+<div style="columns: 2">
+    <p style="margin-block-start: 0;">One way of creating the 'content' of your Hugo page is not to use a markup language like Markdown or Org-Mode, but instead write raw HTML. You need to include a TOML front matter section, but after that write normal HTML, with the file extension <span style="font-family:monospace;font-size:1.2em;">.html</span>, it'll use the default template to create the page page layout, but allows for more precise use of HTML elements that aren't usually available.</p>
+    <p>Perhaps you want to do something a little different, like have your text in two columns? If you haven't set that in the global style sheet, and want it only for one page or article, then this can be a good option to create that. You can, of course, add some HTML syntax to Markdown, but sometimes that's not enough, and for something that acts on a 'div' level like these columns, just HTML is probably a better solution.</p>
+    <p>It does have a number of drawbacks though. Since it just plops the HTML where it would put rendered Markdown, you inherit all the structure of the page templates around it - much of which may not be what you want. The other aspect is that it doesn't allow access to the CSS style sheet. You can add <em>additional</em> styles into each element, inline, but overriding something like the total page text width (which would be really helpful for a column based layout like this) isn't really possible, and you end up with a whole series of repeated inline styles if you want to reuse something like the <span style="font-family:monospace;font-size:1.2em;background-color: black; color: white;">span</span> element used to write monospace text represeting code. Check the source to see how messy this is.</p>
+</div>
+<div style="background-color: indigo; color: pink;padding: 0em 1em;">
+    <p>The upside of this approach is it does mean you can make more colourful sections that depart from the theme significantly without having to worry about what else this might impact, and adding something that now has to work in every other page, or is completely unused in 99% of you pages. Plus you get the nice amenities like navigation, footer and title for free from the rest of the theme.</p>
+    <p>If that's not enough, and you wanted to break free from the constraints of the exisiting templates and theme, but still want to have a page as a coherent part of the site, then there are more radical options available...</p>
+</div>
