@@ -58,7 +58,12 @@
 <meta name="theme-color" content="#f9fafb">
 <link rel="apple-touch-icon" href="{{ (resources.Get $.Site.Params.favicon).RelPermalink }}">
 <!-- Style and links -->
-<link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+{{ range .Params.stylesheets }}
+    <!-- Iterate through -->
+    <link rel="stylesheet" href="{{ . }}">
+{{else}}
+    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+{{end}}
 <link rel="icon" href="{{ (resources.Get $.Site.Params.favicon).RelPermalink }}">
 
 {{ if .IsHome }}

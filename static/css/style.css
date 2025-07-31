@@ -239,14 +239,14 @@ pre code {
 }
 
 /* navigation */
-nav.navigation {
+nav {
     padding: 20px 20px 10px;
     margin: 0 auto;
     text-align: right;
     z-index: 100;
 }
 
-nav.navigation a {
+nav a {
     top: 8px;
     right: 6px;
     padding: 8px 12px;
@@ -255,18 +255,18 @@ nav.navigation a {
     border-radius: 3px;
     /*     font-weight: bold; */
 }
-nav.navigation a:hover {
+nav a:hover {
     color: var(--highLightColour1);
 }
 
-nav.navigation a.button {
+nav a.button {
     background: var(--baseAccentColour);
     color: var(--bgColour);
     margin-left: 12px;
 }
 
 @media screen and (max-width: 680px) {
-    nav.navigation {
+    nav {
 	overflow: auto;
 	white-space: nowrap;
 	overflow-y: hidden;
@@ -275,23 +275,23 @@ nav.navigation a.button {
 }
 
 /* footer */
-#footer {
+footer {
     margin-top: 100px;
     margin-bottom: 100px;
     text-align: center;
     color: var(--textLightColour);
 }
-#footer .copyright {
+footer .copyright {
     margin: 20px auto;
 }
 .powerby {
     margin: 20px auto;
     font-size: 0.9em;
 }
-#footer .split {
+footer .split {
     cursor: pointer;
 }
-#footer .split:hover path {
+footer .split:hover path {
     fill: #ff3356;
     transition: 0.7s ease-out;
     cursor: pointer;
@@ -303,7 +303,7 @@ a.social {
 }
 
 /* main content */
-.main {
+main {
     width: 100%;
     margin: 0 auto;
 }
@@ -391,7 +391,7 @@ a.social {
 
 /* single page */
 #single {
-    max-width: 680px;
+    max-width: 80ch;
     margin: 60px auto 0 auto;
     padding: 0 64px;
 }

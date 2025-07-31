@@ -1,4 +1,4 @@
-<nav class="navigation">
+<nav>
 	{{ if not .IsHome }}
 		<a href="{{ "/" | relURL }}"> <span class="arrow">←</span>{{ with .Site.Params.home }}{{ . }}{{ else }}Home{{ end }}</a>
 	{{ end }}

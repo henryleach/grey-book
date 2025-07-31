@@ -1,0 +1,21 @@
+body {
+    max-width: 100ch;
+    margin: 40px auto;
+    background-color: color(display-p3 0.452 0.134 0.403);
+    color: color(display-p3 0.978 0.981 0.988);
+    font-family: sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+pre {
+    background-color: black;
+    font-size: 120%;
+    padding: 5px;
+}
+
+a {
+    color: color(display-p3 0.978 0.981 0.988);
+}
