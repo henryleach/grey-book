@@ -7,10 +7,10 @@ tags = ['html']
   stylesheets = ['style.css']
 +++
 <h1>Bare HTML With Custom Style</h1>
-<p>In addition to extending/overwriting the default page layout template and CSS, as in the <a href="/posts/html-as-content">previous example</a>, you can completely abandon the 'default' CSS of the site, and create a totally independent one, that starts from a blank canvas. In addition to setting the layout of a page to 'barehtml', you inherit nothing but the header metadata. This means you can:</p>
+<p>In addition to extending/overwriting the default page layout template and CSS, as in the <a href="/posts/extending-the-sites-style-per-post">previous example</a>, you can completely abandon the 'default' CSS of the site, and create a totaly independent one, that starts from a blank canvas. This requires the additional step of adding the layout of a page to 'barehtml' in the post's front matter, then you inherit nothing but the header metadata. All the content of your post is dropped directly into then page's <span class="code">body</span> element. This means you can:</p>
 <ol>
     <li>Go wild!</li>
-    <li>Not worry about overlapping styles coming from another stylesheet that might interfere, or worry about accidentally re-using classes or IDs that might already exist</li>
+    <li>Not worry about overlapping styles coming from another stylesheet that might interfere, or worry about accidentally re-using classes or IDs that might already exist, or might later change without warning</li>
     <li>Create a completely different HTML structure if you need it</li>
     <li>But still have the page integrated in all lists, overviews and taxonomies that the site has</li>
 </ol>
@@ -21,6 +21,7 @@ layout = 'barehtml'
 [params]
   stylesheets = ['style.css']
 </pre>
-<p>This mean everything you write in your .html content file is dumped straight, and unceramoniously, into a 'body' elevement, using only the style sheet(s) listed.</p>
+<p>This mean everything you write in your .html content file is dumped straight, and unceramoniously, into a <span class="code">body</span> element, using only the style sheet(s) listed.</p>
 <p>The style sheet lives in your pagebundle and is referenced relative to your page, so in most cases only the name is neccessary</p>
+<p>It does mean that you have to add all other elements to a page, like the navigation and footer, if you want them to appear.</p>
 <a href="/">Back Home</a>

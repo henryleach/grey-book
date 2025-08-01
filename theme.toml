@@ -7,7 +7,7 @@ tags = ["blog", "fast", "responsive", "simple", "tags", "pages", "grey", "suave"
 features = ["fast", "responsive", "archive", "tags"]
 min_version = 0.147
 # This theme requires the extended version of Hugo
-version = 3.0
+version = 3.1.0
 
 
 [author]

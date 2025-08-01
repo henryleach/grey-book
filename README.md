@@ -78,6 +78,21 @@ or for a Org Mode based post:
 $ hugo new --kind org-post /posts/my-new-post-name
 ```
 
+### Individual Post Styling Options
+
+It's possible to extend/replace the styling for an individual post. The extend the style add the following to the post's front matter (in TOML format), where 'style.css' is an additional stylesheet added in the post's page bundle folder:
+```toml
+[params]
+  stylesheets = ['/css/style.css', 'style.css']
+```
+
+If you wish the extend the existing style, include `/css/style.css` as the **first** style sheet in the list.
+
+This will keep all the HTML structure of the page, but allow extending/replacing the styling. Making the existing document structure work, and safe from future style changes, can be hard. It's also possible to add `layout = 'barehtml'` into the front matter, which means everything on your post is just dropped into the `body` elements of a page, and only keeps the page header metadata. If you do this it's recommended to write the post in HTMl format, so you can add the additional structure the page probably needs.
+
+See the two relevant posts in the ExampleSite folder to see how this can be implemented in more detail.
+
+
 ## Analytics
 
 There are templates to add analytics scripts for [TinyAnalytics](https://tinyanalytics.io).

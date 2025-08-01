@@ -1,0 +1,8 @@
+#single {
+    max-width: 900px;
+}
+
+.columns {
+    columns: 2;
+
+ }

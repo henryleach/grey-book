@@ -2,6 +2,9 @@
 - More semantic HTML & accessability, currently there are only random elements
 - Make Org-Mode images also render as WebP - for some reason only Markdown pages are done so.
 
+## 2025.08
+- Added ability to add additional styles on a per-page basis.
+
 ## 2025.07
 - Updated theme to match Hugo v0.146+ new theme [layout structure](https://gohugo.io/templates/new-templatesystem-overview/#example-folder-structure).
 - Added generic git-scm icon as an alternative to Github

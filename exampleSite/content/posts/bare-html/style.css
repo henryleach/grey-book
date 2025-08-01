@@ -10,6 +10,13 @@ h1 {
     font-weight: bold;
 }
 
+span.code {
+    font-family: monospace;
+    background-color: black;
+    font-size: 120%;
+    padding: 1px;
+}
+
 pre {
     background-color: black;
     font-size: 120%;
