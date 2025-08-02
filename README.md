@@ -70,12 +70,12 @@ If you are using pageBundles and you don't specify an image, one from the pageBu
 Grey Book has two pageBundle archetypes, depending if you want to create a Markdown or Org Mode based post. Either:
 
 ```sh
-$ hugo new --kind md-post /posts/my-new-post-name
+$ hugo new --kind md-post posts/my-new-post-name
 ```
 or for a Org Mode based post:
 
 ```sh
-$ hugo new --kind org-post /posts/my-new-post-name
+$ hugo new --kind org-post posts/my-new-post-name
 ```
 
 ### Individual Post Styling Options
@@ -90,7 +90,13 @@ If you wish the extend the existing style, include `/css/style.css` as the **fir
 
 This will keep all the HTML structure of the page, but allow extending/replacing the styling. Making the existing document structure work, and safe from future style changes, can be hard. It's also possible to add `layout = 'barehtml'` into the front matter, which means everything on your post is just dropped into the `body` elements of a page, and only keeps the page header metadata. If you do this it's recommended to write the post in HTMl format, so you can add the additional structure the page probably needs.
 
-See the two relevant posts in the ExampleSite folder to see how this can be implemented in more detail.
+You can use the archetype 'own-style-post' to create a new post outline in the correct format with:
+
+```sh
+$ hugo new --kind own-style-post posts/my-new-post-name
+```
+
+See the two relevant posts in the `ExampleSite` folder to see how this can be implemented in more detail.
 
 
 ## Analytics

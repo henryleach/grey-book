@@ -1,0 +1,13 @@
++++
+title =  '{{ replace .File.ContentBaseName '-' ' ' | title }}'
+date = {{ .Date }}
+tags = ['x', 'y']
+categories = ['x', 'y']
+draft = false
+layout = 'barehtml'
+[params]
+stylesheets = ['style.css']
+featured_image = 'image.jpg'
++++
+<h1>{{ replace .File.ContentBaseName '-' ' ' | title }}</h1>
+<p>Your post text here</p>

@@ -1,18 +1,18 @@
 +++
-author = "Hugo Authors"
-title = "Markdown Syntax Guide"
-date = "2019-03-11"
-description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+author = 'Hugo Authors'
+title = 'Markdown Syntax Guide'
+date = '2019-03-11'
+description = 'Sample article showcasing basic Markdown syntax and formatting for HTML elements.'
 tags = [
-    "markdown",
-    "css",
-    "html",
+    'markdown',
+    'css',
+    'html',
 ]
 categories = [
-    "themes",
-    "syntax",
+    'themes',
+    'syntax',
 ]
-keywords = ["Markdown", "Example"]
+keywords = ['Markdown', 'Example']
 +++
 
 This article offers a sample of basic [Markdown syntax](https://en.wikipedia.org/wiki/Markdown) that can be used in [Hugo](https://gohugo.io/) content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.

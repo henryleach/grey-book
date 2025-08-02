@@ -1,10 +1,11 @@
 +++
-title =  "{{ replace .TranslationBaseName "-" " " | title }}"
+title =  '{{ replace .File.ContentBaseName '-' ' ' | title }}'
 date = {{ .Date }}
-tags = ["x", "y"]
-categories = ["x", "y"]
+tags = ['x', 'y']
+categories = ['x', 'y']
 draft = false
-featured_image = "image.jpg"
+[params]
+  featured_image = 'image.jpg'
 +++
 
 

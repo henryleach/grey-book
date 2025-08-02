@@ -1,10 +1,11 @@
 +++
-title =  "Featured Images"
-date = 2019-03-10T22:55:52+02:00
-tags = ["Images", "Theme"]
-categories = ["x", "y"]
+title =  'Featured Images'
+date = 2019-03-10
+tags = ['Images', 'Theme']
+categories = ['x', 'y']
 draft = false
-featured_image = "flowers.jpg"
+[params]
+  featured_image = 'flowers.jpg'
 +++
 
 ![](flowers.jpg)
@@ -20,7 +21,8 @@ A featured image can be used, even if the picture is not featured within the pos
 ```toml
 +++
 title = "Featured Images"
-featured_image = "none"
+[params]
+  featured_image = "none"
 +++
 ```
 

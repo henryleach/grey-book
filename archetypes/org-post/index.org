@@ -1,4 +1,4 @@
-#+TITLE: {{ replace .Name "-" " " | title }}
+#+TITLE: {{ replace .File.ContentBaseName '-' ' ' | title }}
 #+DATE: {{ .Date }}
 #+DRAFT: true
 #+TAGS[]: x y

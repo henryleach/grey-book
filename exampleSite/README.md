@@ -1,18 +1,22 @@
-# Hugo Theme Mini Example Site
+# Hugo Theme Grey Book Example Site
 
-This repository offers an example site for [Hugo Theme mini](https://github.com/nodejh/hugo-theme-mini) and also it provides the default content for [Online Demo](http://nodejh.github.io/hugo-theme-mini).
+This repository offers an example site for [Grey Book Hugo Theme](https://github.com/henryleach/grey-book) and also it provides the default content for [the online demo](https://grey-book-theme-example.onrender.com).
 
 # Using
 
-1. [Install Hugo](https://gohugo.io/overview/installing/)
+1. [Install Hugo](https://gohugo.io/installation)
 2. Clone this repository
 
-    ```bash
-    $ git clone https://github.com/nodejh/hugo-theme-mini
-    $ cd exampleSite
-    ```
-3. Run Hugo server. The exampleSite use theme `hugo-theme-mini` by setting `themesDir` as `../../`
+```sh
+$ git clone https://github.com/henryleach/grey-book.git
+$ cd exampleSite
+```
 
-    ```bash
-    $ hugo server
-    ```
+3. Run Hugo server. The exampleSite uses theme `grey-book` by setting `themesDir` as `../../`
+
+```sh
+$ hugo server
+```
+
+You should then be able to open a browser to [http://localhost:1313] and see the site.
+

@@ -1,9 +1,11 @@
 ## TODO
-- More semantic HTML & accessability, currently there are only random elements
+- More semantic HTML & accessibility, currently there are only random elements
 - Make Org-Mode images also render as WebP - for some reason only Markdown pages are done so.
 
 ## 2025.08
 - Added ability to add additional styles on a per-page basis.
+- Created new archetype for a bare, independently styled, post.
+- Updated archetype templates to new title variable, and featured_image
 
 ## 2025.07
 - Updated theme to match Hugo v0.146+ new theme [layout structure](https://gohugo.io/templates/new-templatesystem-overview/#example-folder-structure).
